@@ -1,0 +1,8 @@
+2025-03-30 17:30:16,713 - INFO - Iniciando autenticação no Kaggle.
+2025-03-30 17:30:16,717 - INFO - Autenticação bem-sucedida!
+2025-03-30 17:30:16,718 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-30 17:30:19,439 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-03-30 17:30:19,439 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-03-30 17:30:20,396 - INFO - Dataset carregado com sucesso: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-03-30 17:34:13,669 - INFO - Relatório ydata-profiling gerado com sucesso.
+2025-03-30 17:34:13,699 - INFO - Processo concluído com sucesso.

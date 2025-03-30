@@ -5,7 +5,7 @@ def setup_logger():
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler("logs.txt"),
+            logging.FileHandler("models/logs/logs.txt"),
             logging.StreamHandler()
         ]
     )

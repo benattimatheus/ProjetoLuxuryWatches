@@ -4,6 +4,7 @@ import dtale
 from autoviz.AutoViz_Class import AutoViz_Class
 from ydata_profiling import ProfileReport
 import logging
+from models.logs.logger import logger
 
 
 logger = logging.getLogger("EDA_Project")
@@ -40,7 +41,7 @@ class EDAReport:
     def generate_ydata(self):
         if self.dataset is not None:
             profile = ProfileReport(self.dataset, explorative=True)
-            profile.to_file("ydata_profiling_report.html")
+            profile.to_file("views/ydata_profiling_report.html")
             logger.info("Relatório ydata-profiling gerado com sucesso.")
         else:
             logger.error("Dataset não carregado. Relatório ydata-profiling não pode ser gerado.")
