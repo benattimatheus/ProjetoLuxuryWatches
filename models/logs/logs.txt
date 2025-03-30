@@ -6,3 +6,105 @@
 2025-03-30 17:30:20,396 - INFO - Dataset carregado com sucesso: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
 2025-03-30 17:34:13,669 - INFO - Relatório ydata-profiling gerado com sucesso.
 2025-03-30 17:34:13,699 - INFO - Processo concluído com sucesso.
+2025-03-30 17:59:29,437 - INFO - Iniciando autenticação no Kaggle.
+2025-03-30 17:59:29,439 - INFO - Autenticação bem-sucedida!
+2025-03-30 17:59:29,440 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-03-30 17:59:32,203 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-03-30 17:59:32,203 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-03-30 17:59:33,371 - INFO - Dataset carregado com sucesso: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-03-30 18:03:44,005 - INFO - Relatório ydata-profiling gerado com sucesso.
+2025-03-30 18:03:44,044 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-03-30 18:03:44,045 - INFO - Carregando os dados brutos.
+2025-03-30 18:03:44,048 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-03-30 18:03:44,661 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-03-30 18:03:44,691 - INFO - Amostra de 10% dos dados selecionada.
+2025-03-30 18:03:44,692 - INFO - Dados carregados com sucesso. Shape dos dados: (28449, 14)
+2025-03-30 18:03:44,692 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-30 18:03:44,692 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-30 18:03:44,698 - INFO - Coluna de destino removida do conjunto de dados.
+2025-03-30 18:03:44,705 - INFO - 'Unnamed: 0' removida das colunas.
+2025-03-30 18:03:44,738 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-03-30 18:03:44,758 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-03-30 18:03:44,769 - INFO - Características numéricas identificadas: ['size']
+2025-03-30 18:03:44,770 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-03-30 18:03:44,770 - INFO - Pipelines de pré-processamento configurados.
+2025-03-30 18:03:44,771 - INFO - ColunaTransformer configurado.
+2025-03-30 18:03:44,987 - INFO - Transformações realizadas no conjunto de dados.
+2025-03-30 18:03:44,988 - INFO - Nomes das colunas transformadas gerados.
+2025-03-30 18:03:44,988 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-03-30 18:03:44,989 - INFO - Coluna alvo 'price' extraída.
+2025-03-30 18:03:44,991 - INFO - Pré-processamento dos dados concluído.
+2025-03-30 18:03:44,993 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (28449, 13)
+2025-03-30 18:03:44,994 - INFO - Iniciando a construção e treinamento do modelo.
+2025-03-30 18:03:44,994 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-03-30 18:03:44,995 - INFO - Iniciando o treinamento do modelo.
+2025-03-30 18:03:44,999 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-03-30 18:03:44,999 - INFO - Shape de X: (28449, 12)
+2025-03-30 18:03:45,001 - INFO - Shape de y: (28449,)
+2025-03-30 18:03:45,003 - INFO - Shape de X após o pré-processamento: (28449, 12)
+2025-03-30 18:03:45,005 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-03-30 18:03:45,007 - INFO - 0    0.029268
+1   -0.290341
+2    0.000000
+3    0.277853
+4   -0.112780
+Name: size, dtype: float64
+2025-03-30 18:03:45,008 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-03-30 18:03:45,010 - INFO - 0    0.029268
+1   -0.290341
+2    0.000000
+3    0.277853
+4   -0.112780
+Name: size, dtype: float64
+2025-03-30 18:03:45,011 - INFO - Número de valores NaN após conversão: 0
+2025-03-30 18:03:45,016 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-03-30 18:03:45,018 - INFO - Shape de X após conversão para numérico: (28449, 12)
+2025-03-30 18:03:45,018 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-03-30 18:03:45,019 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-03-30 18:03:45,019 - INFO - Shape de y antes do treinamento: (28449,)
+2025-03-30 18:05:13,131 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.2409
+2025-03-30 18:05:13,132 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-03-30 18:05:13,132 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-03-30 18:05:13,133 - INFO - Shape de y antes do treinamento: (28449,)
+2025-03-30 18:05:36,964 - INFO - Modelo: ada_boost | Melhor R² CV: 0.1776
+2025-03-30 18:05:36,965 - INFO - Iniciando treinamento do modelo: xgboost
+2025-03-30 18:05:36,965 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-03-30 18:05:36,965 - INFO - Shape de y antes do treinamento: (28449,)
+2025-03-30 18:05:42,858 - INFO - Modelo: xgboost | Melhor R² CV: 0.2928
+2025-03-30 18:05:42,858 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-03-30 18:05:42,858 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-03-30 18:05:42,859 - INFO - Shape de y antes do treinamento: (28449,)
+2025-03-30 18:06:06,305 - INFO - Modelo: lightgbm | Melhor R² CV: 0.3031
+2025-03-30 18:06:06,306 - INFO - 
+Modelo Selecionado: lightgbm com R² CV: 0.3031
+2025-03-30 18:06:06,310 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('regressor', LGBMRegressor(random_state=123))])
+2025-03-30 18:06:06,310 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('regressor', LGBMRegressor(random_state=123))])
+2025-03-30 18:06:06,311 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-03-30 18:06:06,311 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-03-30 18:06:06,312 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-03-30 18:06:06,313 - INFO - Shape de X para cálculo dos valores SHAP: (28449, 12)
+2025-03-30 18:40:29,552 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-03-30 18:40:29,553 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-03-30 18:40:29,553 - INFO - Análise das features concluída.
+2025-03-30 18:40:30,328 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-03-30 18:40:31,075 - INFO - Dados carregados com sucesso.
+2025-03-30 18:40:31,076 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-30 18:40:31,076 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-30 18:40:31,100 - INFO - Coluna de destino removida do conjunto de dados.
+2025-03-30 18:40:31,136 - INFO - 'Unnamed: 0' removida das colunas.
+2025-03-30 18:40:31,366 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-03-30 18:40:31,570 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-03-30 18:40:31,667 - INFO - Características numéricas identificadas: ['size']
+2025-03-30 18:40:31,668 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-03-30 18:40:31,669 - INFO - Pipelines de pré-processamento configurados.
+2025-03-30 18:40:31,669 - INFO - ColunaTransformer configurado.
+2025-03-30 18:40:33,604 - INFO - Transformações realizadas no conjunto de dados.
+2025-03-30 18:40:33,604 - INFO - Nomes das colunas transformadas gerados.
+2025-03-30 18:40:33,604 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-03-30 18:40:33,605 - INFO - Coluna alvo 'price' extraída.
+2025-03-30 18:40:33,614 - INFO - Pré-processamento concluído com sucesso.
+2025-03-30 18:40:33,615 - INFO - X e y têm o mesmo número de amostras: 284491 amostras.
+2025-03-30 18:40:33,615 - INFO - Dividindo os dados em conjuntos de treino e teste.
+2025-03-30 18:40:33,645 - INFO - Dados divididos: 199143 amostras de treino, 85348 amostras de teste.
+2025-03-30 18:40:33,646 - INFO - Iniciando o treinamento do modelo TPOT.
+2025-03-30 18:40:33,697 - ERROR - Erro durante o treinamento do modelo TPOT: TPOTEstimator.__init__() got an unexpected keyword argument 'verbosity'

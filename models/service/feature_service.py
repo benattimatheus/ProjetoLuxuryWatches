@@ -1,4 +1,4 @@
-from powershap_adapter import calculate_shap_values
+from models.service.powershap_adapter import calculate_shap_values
 from models.logs.logger import logger
 
 def analyze_features(model, data, target: str):

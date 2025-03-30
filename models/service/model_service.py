@@ -1,4 +1,4 @@
-from model_adapter import train_model_sklearn
+from models.service.model_adapter import train_model_sklearn
 from models.logs.logger import logger
 
 def build_model(data, target: str):
