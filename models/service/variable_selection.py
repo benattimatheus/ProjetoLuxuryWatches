@@ -1,33 +1,20 @@
+import os
 import pandas as pd
-import numpy as np
-from tpot import TPOTClassifier
+from tpot import TPOTRegressor
 from sklearn.model_selection import train_test_split
-from models.service.data_preprocessor import preprocess_data  # Importando a função de pré-processamento
-from models.logs.logger import logger  # Importando o logger
+from models.service.data_preprocessor import preprocess_data
+from models.logs.logger import logger
 
 def train_tpot_model(file_path: str, target_column: str):
-    """
-    Treina um modelo TPOT usando um conjunto de dados e uma coluna alvo especificada.
-    
-    Parâmetros:
-      - file_path: Caminho para o arquivo CSV de entrada.
-      - target_column: Nome da coluna alvo para a previsão.
-    
-    Retorna:
-      - model: O modelo TPOT treinado.
-      - score: A pontuação do modelo no conjunto de teste.
-      - pipeline: O pipeline otimizado encontrado pelo TPOT.
-    """
-    # Carregar os dados
     logger.info(f"Carregando os dados do arquivo: {file_path}")
     try:
         data = pd.read_csv(file_path)
-        logger.info("Dados carregados com sucesso.")
+        data = data.sample(frac=0.01, random_state=42)  # Usa apenas 0.1% do dataset para acelerar
+        logger.info(f"Dados carregados e amostrados com sucesso: {len(data)} linhas.")
     except Exception as e:
         logger.error(f"Erro ao carregar os dados: {e}")
         raise e
 
-    # Chama o pré-processamento dos dados
     logger.info("Iniciando o pré-processamento dos dados.")
     try:
         X_preprocessed, y, preprocessor = preprocess_data(data, target_column)
@@ -36,41 +23,43 @@ def train_tpot_model(file_path: str, target_column: str):
         logger.error(f"Erro durante o pré-processamento: {e}")
         raise e
 
-    # Verificar se X e y têm o mesmo número de amostras
     if X_preprocessed.shape[0] != len(y):
-        logger.error(f"X e y têm tamanhos diferentes: X={X_preprocessed.shape[0]}, y={len(y)}")
-        raise ValueError(f"X e y têm tamanhos diferentes: X={X_preprocessed.shape[0]}, y={len(y)}")
+        logger.error(f"Tamanhos diferentes: X={X_preprocessed.shape[0]}, y={len(y)}")
+        raise ValueError("Tamanhos de X e y incompatíveis.")
     else:
-        logger.info(f"X e y têm o mesmo número de amostras: {X_preprocessed.shape[0]} amostras.")
+        logger.info(f"Número de amostras: {X_preprocessed.shape[0]}")
 
-    # Dividir os dados em treino e teste
-    logger.info("Dividindo os dados em conjuntos de treino e teste.")
-    X_train, X_test, y_train, y_test = train_test_split(X_preprocessed, y, test_size=0.3, random_state=42)
-    logger.info(f"Dados divididos: {len(X_train)} amostras de treino, {len(X_test)} amostras de teste.")
-
-    # Criar e treinar o TPOT Classifier
-    logger.info("Iniciando o treinamento do modelo TPOT.")
+    # Divisão dos dados com uma pequena fatia de teste (0.1%)
+    X_train, X_test, y_train, y_test = train_test_split(X_preprocessed, y, test_size=0.01, random_state=42)
+    logger.info(f"Treino: {len(X_train)}, Teste: {len(X_test)}")
+    logger.info(f"Tamanho do treino: {len(X_train)} | Tamanho do teste: {len(X_test)}")
+    logger.info(f"Valores únicos em y_test: {y_test.unique()}")
+    logger.info("Treinando TPOT Regressor (modo rápido).")
     try:
-        tpot = TPOTClassifier(
-            generations=5,
-            population_size=20,
-            verbosity=2,
-            random_state=42
+
+        tpot = TPOTRegressor(
+            generations=1,
+            population_size=5,
+            random_state=42,
+            n_jobs=1
         )
         tpot.fit(X_train, y_train)
-        logger.info("Modelo TPOT treinado com sucesso.")
+        logger.info("Modelo treinado com sucesso.")
     except Exception as e:
-        logger.error(f"Erro durante o treinamento do modelo TPOT: {e}")
+        logger.error(f"Erro durante o treinamento do TPOT: {e}")
         raise e
 
-    # Avaliar o desempenho no conjunto de teste
-    logger.info("Avaliar o desempenho no conjunto de teste.")
-    score = tpot.score(X_test, y_test)
-    logger.info(f"Score no conjunto de teste: {score}")
+    # Avaliação do modelo
+    if hasattr(tpot, 'fitted_pipeline_'):
+        try:
+            score = score = tpot.fitted_pipeline_.score(X_test, y_test)
+            logger.info(f"Score no teste: {score}")
+            logger.info(f"Pipeline otimizado: {tpot.fitted_pipeline_}")
+        except Exception as e:
+            logger.error(f"Erro ao avaliar o modelo: {e}")
+            raise e
+    else:
+        logger.error("Pipeline não foi treinado corretamente.")
+        return None, None, None
 
-    # Exibir o pipeline otimizado encontrado
-    logger.info("Exibindo o pipeline otimizado encontrado.")
-    logger.info(f"Pipeline otimizado: {tpot.fitted_pipeline_}")
-
-    # Retornar o modelo, a pontuação e o pipeline otimizado
     return tpot, score, tpot.fitted_pipeline_

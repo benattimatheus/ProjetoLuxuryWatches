@@ -32,23 +32,23 @@ if not os.path.exists(dataset_path):
 
 # Análise exploratória
 logger.info("Dataset baixado com sucesso! Gerando relatórios de EDA.")
-eda = EDAReport(dataset_path)
-eda.generate_autoviz()
-#eda.generate_sweetviz()
-eda.generate_dtale()
-eda.generate_ydata()
+# eda = EDAReport(dataset_path)
+# eda.generate_autoviz()
+# #eda.generate_sweetviz()
+# eda.generate_dtale()
+# eda.generate_ydata()
 
 if __name__ == '__main__':
     file_path = dataset_path  # Caminho para o arquivo CSV
     target = 'price'          # Nome da coluna alvo
 
     # Chama a função run_pipeline para treinar o modelo e gerar o resumo SHAP
-    model, shap_summary = run_pipeline(file_path, target)
-    print("Model training and feature analysis completed.")
+    # model, shap_summary = run_pipeline(file_path, target)
+    # print("Model training and feature analysis completed.")
 
     # Exibe o gráfico de resumo SHAP
-    import shap
-    shap.summary_plot(shap_summary.values, shap_summary.data)
+    # import shap
+    # shap.summary_plot(shap_summary.values, shap_summary.data)
 
     # Chama a função train_tpot_model para treinar o modelo TPOT e obter o pipeline otimizado
     model, score, pipeline = train_tpot_model(file_path, target)

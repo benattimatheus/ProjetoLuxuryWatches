@@ -108,3 +108,1081 @@ Modelo Selecionado: lightgbm com R² CV: 0.3031
 2025-03-30 18:40:33,645 - INFO - Dados divididos: 199143 amostras de treino, 85348 amostras de teste.
 2025-03-30 18:40:33,646 - INFO - Iniciando o treinamento do modelo TPOT.
 2025-03-30 18:40:33,697 - ERROR - Erro durante o treinamento do modelo TPOT: TPOTEstimator.__init__() got an unexpected keyword argument 'verbosity'
+2025-04-06 16:33:53,786 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:33:53,788 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:33:53,788 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:33:56,656 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:33:56,657 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:33:58,532 - INFO - Dataset carregado com sucesso: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:39:34,088 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:39:34,091 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:39:34,091 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:39:36,244 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:39:36,246 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:39:36,247 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-06 16:39:36,247 - INFO - Carregando os dados brutos.
+2025-04-06 16:39:36,248 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:39:37,489 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:39:37,522 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-06 16:39:37,522 - INFO - Dados carregados com sucesso. Shape dos dados: (28449, 14)
+2025-04-06 16:39:37,523 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:39:37,523 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:39:37,529 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 16:39:37,533 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 16:39:37,552 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 16:39:37,569 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 16:39:37,577 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 16:39:37,577 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:39:37,577 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 16:39:37,578 - INFO - ColunaTransformer configurado.
+2025-04-06 16:39:37,766 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 16:39:37,767 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 16:39:37,768 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 16:39:37,768 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 16:39:37,770 - INFO - Pré-processamento dos dados concluído.
+2025-04-06 16:39:37,772 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (28449, 13)
+2025-04-06 16:39:37,773 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-06 16:39:37,773 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-06 16:39:37,773 - INFO - Iniciando o treinamento do modelo.
+2025-04-06 16:39:37,774 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-06 16:39:37,774 - INFO - Shape de X: (28449, 12)
+2025-04-06 16:39:37,776 - INFO - Shape de y: (28449,)
+2025-04-06 16:39:37,778 - INFO - Shape de X após o pré-processamento: (28449, 12)
+2025-04-06 16:39:37,778 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-06 16:39:37,782 - INFO - 0    0.029268
+1   -0.290341
+2    0.000000
+3    0.277853
+4   -0.112780
+Name: size, dtype: float64
+2025-04-06 16:39:37,783 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-06 16:39:37,785 - INFO - 0    0.029268
+1   -0.290341
+2    0.000000
+3    0.277853
+4   -0.112780
+Name: size, dtype: float64
+2025-04-06 16:39:37,786 - INFO - Número de valores NaN após conversão: 0
+2025-04-06 16:39:37,790 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:39:37,791 - INFO - Shape de X após conversão para numérico: (28449, 12)
+2025-04-06 16:39:37,792 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-06 16:39:37,792 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-04-06 16:39:37,793 - INFO - Shape de y antes do treinamento: (28449,)
+2025-04-06 16:41:52,309 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.2409
+2025-04-06 16:41:52,309 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-06 16:41:52,310 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-04-06 16:41:52,310 - INFO - Shape de y antes do treinamento: (28449,)
+2025-04-06 16:42:20,864 - INFO - Modelo: ada_boost | Melhor R² CV: 0.1776
+2025-04-06 16:42:20,865 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-06 16:42:20,865 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-04-06 16:42:20,866 - INFO - Shape de y antes do treinamento: (28449,)
+2025-04-06 16:42:29,038 - INFO - Modelo: xgboost | Melhor R² CV: 0.2928
+2025-04-06 16:42:29,039 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-06 16:42:29,039 - INFO - Shape de X antes do treinamento: (28449, 12)
+2025-04-06 16:42:29,039 - INFO - Shape de y antes do treinamento: (28449,)
+2025-04-06 16:42:51,886 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:42:51,887 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:42:51,888 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:42:54,334 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:42:54,334 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:42:54,335 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-06 16:42:54,335 - INFO - Carregando os dados brutos.
+2025-04-06 16:42:54,335 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:42:55,606 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:42:55,630 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-06 16:42:55,630 - INFO - Dados carregados com sucesso. Shape dos dados: (2845, 14)
+2025-04-06 16:42:55,631 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:42:55,631 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:42:55,632 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 16:42:55,633 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 16:42:55,636 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 16:42:55,639 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 16:42:55,641 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 16:42:55,641 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:42:55,641 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 16:42:55,641 - INFO - ColunaTransformer configurado.
+2025-04-06 16:42:55,679 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 16:42:55,679 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 16:42:55,680 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 16:42:55,680 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 16:42:55,681 - INFO - Pré-processamento dos dados concluído.
+2025-04-06 16:42:55,681 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (2845, 13)
+2025-04-06 16:42:55,682 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-06 16:42:55,682 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-06 16:42:55,682 - INFO - Iniciando o treinamento do modelo.
+2025-04-06 16:42:55,682 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-06 16:42:55,683 - INFO - Shape de X: (2845, 12)
+2025-04-06 16:42:55,683 - INFO - Shape de y: (2845,)
+2025-04-06 16:42:55,684 - INFO - Shape de X após o pré-processamento: (2845, 12)
+2025-04-06 16:42:55,684 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-06 16:42:55,686 - INFO - 0    0.040752
+1   -0.536558
+2    0.000000
+3    0.489771
+4   -0.215830
+Name: size, dtype: float64
+2025-04-06 16:42:55,687 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-06 16:42:55,688 - INFO - 0    0.040752
+1   -0.536558
+2    0.000000
+3    0.489771
+4   -0.215830
+Name: size, dtype: float64
+2025-04-06 16:42:55,688 - INFO - Número de valores NaN após conversão: 0
+2025-04-06 16:42:55,689 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:42:55,689 - INFO - Shape de X após conversão para numérico: (2845, 12)
+2025-04-06 16:42:55,690 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-06 16:42:55,690 - INFO - Shape de X antes do treinamento: (2845, 12)
+2025-04-06 16:42:55,690 - INFO - Shape de y antes do treinamento: (2845,)
+2025-04-06 16:43:14,237 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.1734
+2025-04-06 16:43:14,237 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-06 16:43:14,238 - INFO - Shape de X antes do treinamento: (2845, 12)
+2025-04-06 16:43:14,238 - INFO - Shape de y antes do treinamento: (2845,)
+2025-04-06 16:43:25,299 - INFO - Modelo: ada_boost | Melhor R² CV: 0.0452
+2025-04-06 16:43:25,301 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-06 16:43:25,302 - INFO - Shape de X antes do treinamento: (2845, 12)
+2025-04-06 16:43:25,303 - INFO - Shape de y antes do treinamento: (2845,)
+2025-04-06 16:43:34,066 - INFO - Modelo: xgboost | Melhor R² CV: 0.2323
+2025-04-06 16:43:34,067 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-06 16:43:34,067 - INFO - Shape de X antes do treinamento: (2845, 12)
+2025-04-06 16:43:34,068 - INFO - Shape de y antes do treinamento: (2845,)
+2025-04-06 16:45:10,270 - INFO - Modelo: lightgbm | Melhor R² CV: 0.2599
+2025-04-06 16:45:10,271 - INFO - 
+Modelo Selecionado: lightgbm com R² CV: 0.2599
+2025-04-06 16:45:10,279 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('regressor',
+                 LGBMRegressor(learning_rate=0.01, random_state=123))])
+2025-04-06 16:45:10,282 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('regressor',
+                 LGBMRegressor(learning_rate=0.01, random_state=123))])
+2025-04-06 16:45:10,283 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-06 16:45:10,283 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-06 16:45:10,284 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-06 16:45:10,286 - INFO - Shape de X para cálculo dos valores SHAP: (2845, 12)
+2025-04-06 16:49:51,751 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-04-06 16:49:51,752 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-06 16:49:51,752 - INFO - Análise das features concluída.
+2025-04-06 16:49:52,216 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:49:53,901 - INFO - Dados carregados com sucesso.
+2025-04-06 16:49:53,902 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:49:53,903 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:49:53,972 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 16:49:54,068 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 16:49:54,559 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 16:49:54,952 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 16:49:55,107 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 16:49:55,108 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:49:55,109 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 16:49:55,109 - INFO - ColunaTransformer configurado.
+2025-04-06 16:49:59,147 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 16:49:59,148 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 16:49:59,148 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 16:49:59,149 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 16:49:59,167 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 16:49:59,168 - INFO - X e y têm o mesmo número de amostras: 284491 amostras.
+2025-04-06 16:49:59,168 - INFO - Dividindo os dados em conjuntos de treino e teste.
+2025-04-06 16:49:59,214 - INFO - Dados divididos: 256041 amostras de treino, 28450 amostras de teste.
+2025-04-06 16:49:59,214 - INFO - Iniciando o treinamento do modelo TPOT.
+2025-04-06 16:49:59,285 - ERROR - Erro durante o treinamento do modelo TPOT: TPOTEstimator.__init__() got an unexpected keyword argument 'verbosity'
+2025-04-06 16:52:31,722 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:52:31,723 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:52:31,724 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:52:33,962 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:52:33,963 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:52:33,963 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:52:35,173 - INFO - Dados carregados com sucesso.
+2025-04-06 16:52:35,174 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:52:35,174 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:52:35,243 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 16:52:35,324 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 16:52:35,531 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 16:52:35,756 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 16:52:35,906 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 16:52:35,907 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:52:35,907 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 16:52:35,908 - INFO - ColunaTransformer configurado.
+2025-04-06 16:52:37,903 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 16:52:37,903 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 16:52:37,904 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 16:52:37,905 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 16:52:37,913 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 16:52:37,913 - INFO - X e y têm o mesmo número de amostras: 284491 amostras.
+2025-04-06 16:52:37,914 - INFO - Dividindo os dados em conjuntos de treino e teste.
+2025-04-06 16:52:37,943 - INFO - Dados divididos: 256041 amostras de treino, 28450 amostras de teste.
+2025-04-06 16:52:37,944 - INFO - Iniciando o treinamento do modelo TPOT (regressão).
+2025-04-06 16:52:38,096 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 16:52:38,135 - INFO - State start
+2025-04-06 16:52:38,175 - INFO -   Scheduler at:     tcp://127.0.0.1:61760
+2025-04-06 16:52:38,176 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 16:52:38,176 - INFO - Registering Worker plugin shuffle
+2025-04-06 16:52:38,214 - INFO -         Start Nanny at: 'tcp://127.0.0.1:61763'
+2025-04-06 16:52:48,892 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:52:48,895 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:52:48,896 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:52:51,291 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:52:51,292 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:52:51,468 - INFO -       Start worker at:      tcp://127.0.0.1:61775
+2025-04-06 16:52:51,469 - INFO -          Listening to:      tcp://127.0.0.1:61775
+2025-04-06 16:52:51,470 - INFO -           Worker name:                          0
+2025-04-06 16:52:51,471 - INFO -          dashboard at:            127.0.0.1:61776
+2025-04-06 16:52:51,473 - INFO - Waiting to connect to:      tcp://127.0.0.1:61760
+2025-04-06 16:52:51,474 - INFO - -------------------------------------------------
+2025-04-06 16:52:51,475 - INFO -               Threads:                          1
+2025-04-06 16:52:51,475 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-o6pgbjzq
+2025-04-06 16:52:51,477 - INFO - -------------------------------------------------
+2025-04-06 16:52:51,534 - INFO - Register worker addr: tcp://127.0.0.1:61775 name: 0
+2025-04-06 16:52:51,540 - INFO - Starting worker compute stream, tcp://127.0.0.1:61775
+2025-04-06 16:52:51,540 - INFO - Starting established connection to tcp://127.0.0.1:61777
+2025-04-06 16:52:51,540 - INFO - Starting Worker plugin shuffle
+2025-04-06 16:52:51,543 - INFO -         Registered to:      tcp://127.0.0.1:61760
+2025-04-06 16:52:51,544 - INFO - -------------------------------------------------
+2025-04-06 16:52:51,549 - INFO - Starting established connection to tcp://127.0.0.1:61760
+2025-04-06 16:52:51,574 - INFO - Receive client connection: Client-b9360d99-1320-11f0-94b0-0ccc47e8fcbd
+2025-04-06 16:52:51,575 - INFO - Starting established connection to tcp://127.0.0.1:61778
+2025-04-06 16:56:55,458 - INFO - Stopping worker at tcp://127.0.0.1:61775. Reason: worker-close
+2025-04-06 16:56:55,468 - INFO - Closing Nanny gracefully at 'tcp://127.0.0.1:61763'. Reason: worker-close
+2025-04-06 16:56:55,472 - WARNING - Async instruction for <Task cancelled name="execute('eval_objective_list-e0f9e2d34c4ba4747ccfcecfbafe5fa4')" coro=<Worker.execute() done, defined at C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\worker_state_machine.py:3607>> ended with CancelledError
+2025-04-06 16:56:55,475 - INFO - Removing Worker plugin shuffle
+2025-04-06 16:56:55,481 - INFO - Received 'close-stream' from tcp://127.0.0.1:61777; closing.
+2025-04-06 16:56:55,481 - INFO - Connection to tcp://127.0.0.1:61760 has been closed.
+2025-04-06 16:56:55,483 - INFO - Remove worker addr: tcp://127.0.0.1:61775 name: 0 (stimulus_id='handle-worker-cleanup-1743969415.4825187')
+2025-04-06 16:56:55,484 - ERROR - Removing worker 'tcp://127.0.0.1:61775' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-45cad7462ffaf01050b29a4ccd87b23a', 'Series-a24831c93117e2a3dd68c768e132bb7e'} (stimulus_id='handle-worker-cleanup-1743969415.4825187')
+2025-04-06 16:56:55,487 - INFO - Lost all workers
+2025-04-06 16:56:55,613 - ERROR - Erro durante o treinamento do modelo TPOT: "None of [Index(['Eval Error'], dtype='object')] are in the [index]"
+2025-04-06 16:56:55,784 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743969415.783752') (0,)
+2025-04-06 16:56:55,785 - INFO - Closing Nanny at 'tcp://127.0.0.1:61763'. Reason: nanny-close
+2025-04-06 16:56:55,786 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 16:56:59,773 - WARNING - Worker process still alive after 4.0 seconds, killing
+2025-04-06 16:56:59,876 - INFO - Worker process 87936 was killed by signal 15
+2025-04-06 16:56:59,879 - INFO - Nanny at 'tcp://127.0.0.1:61763' closed.
+2025-04-06 16:56:59,881 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 16:56:59,883 - INFO - Scheduler closing all comms
+2025-04-06 16:58:14,965 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:58:14,969 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:58:14,969 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:58:17,723 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:58:17,725 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:58:17,726 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 16:58:19,374 - INFO - Dados carregados com sucesso.
+2025-04-06 16:58:19,375 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:58:19,375 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 16:58:19,410 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 16:58:19,457 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 16:58:19,771 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 16:58:20,151 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 16:58:20,259 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 16:58:20,259 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 16:58:20,261 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 16:58:20,261 - INFO - ColunaTransformer configurado.
+2025-04-06 16:58:22,941 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 16:58:22,942 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 16:58:22,943 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 16:58:22,943 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 16:58:22,957 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 16:58:22,958 - INFO - X e y têm o mesmo número de amostras: 284491 amostras.
+2025-04-06 16:58:22,958 - INFO - Dividindo os dados em conjuntos de treino e teste.
+2025-04-06 16:58:23,006 - INFO - Dados divididos: 281646 amostras de treino, 2845 amostras de teste.
+2025-04-06 16:58:23,007 - INFO - Iniciando o treinamento do modelo TPOT (regressão).
+2025-04-06 16:58:23,156 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 16:58:23,200 - INFO - State start
+2025-04-06 16:58:23,230 - INFO -   Scheduler at:     tcp://127.0.0.1:61918
+2025-04-06 16:58:23,230 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 16:58:23,231 - INFO - Registering Worker plugin shuffle
+2025-04-06 16:58:23,266 - INFO -         Start Nanny at: 'tcp://127.0.0.1:61921'
+2025-04-06 16:58:34,235 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 16:58:34,236 - INFO - Autenticação bem-sucedida!
+2025-04-06 16:58:34,236 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 16:58:36,663 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 16:58:36,664 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 16:58:36,794 - INFO -       Start worker at:      tcp://127.0.0.1:61931
+2025-04-06 16:58:36,795 - INFO -          Listening to:      tcp://127.0.0.1:61931
+2025-04-06 16:58:36,796 - INFO -           Worker name:                          0
+2025-04-06 16:58:36,797 - INFO -          dashboard at:            127.0.0.1:61932
+2025-04-06 16:58:36,798 - INFO - Waiting to connect to:      tcp://127.0.0.1:61918
+2025-04-06 16:58:36,798 - INFO - -------------------------------------------------
+2025-04-06 16:58:36,799 - INFO -               Threads:                          1
+2025-04-06 16:58:36,800 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-rn0efd23
+2025-04-06 16:58:36,801 - INFO - -------------------------------------------------
+2025-04-06 16:58:36,814 - INFO - Register worker addr: tcp://127.0.0.1:61931 name: 0
+2025-04-06 16:58:36,822 - INFO - Starting worker compute stream, tcp://127.0.0.1:61931
+2025-04-06 16:58:36,823 - INFO - Starting established connection to tcp://127.0.0.1:61933
+2025-04-06 16:58:36,823 - INFO - Starting Worker plugin shuffle
+2025-04-06 16:58:36,826 - INFO -         Registered to:      tcp://127.0.0.1:61918
+2025-04-06 16:58:36,827 - INFO - -------------------------------------------------
+2025-04-06 16:58:36,833 - INFO - Starting established connection to tcp://127.0.0.1:61918
+2025-04-06 16:58:36,912 - INFO - Receive client connection: Client-870b3003-1321-11f0-beac-0ccc47e8fcbd
+2025-04-06 16:58:36,914 - INFO - Starting established connection to tcp://127.0.0.1:61934
+2025-04-06 17:04:17,595 - INFO - Stopping worker at tcp://127.0.0.1:61931. Reason: worker-close
+2025-04-06 17:04:17,599 - INFO - Closing Nanny gracefully at 'tcp://127.0.0.1:61921'. Reason: worker-close
+2025-04-06 17:04:17,600 - WARNING - Async instruction for <Task cancelled name="execute('eval_objective_list-27a2262511cbefd6200b224d563608b3')" coro=<Worker.execute() done, defined at C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\worker_state_machine.py:3607>> ended with CancelledError
+2025-04-06 17:04:17,601 - INFO - Removing Worker plugin shuffle
+2025-04-06 17:04:17,603 - INFO - Connection to tcp://127.0.0.1:61918 has been closed.
+2025-04-06 17:04:17,603 - INFO - Received 'close-stream' from tcp://127.0.0.1:61933; closing.
+2025-04-06 17:04:17,604 - INFO - Remove worker addr: tcp://127.0.0.1:61931 name: 0 (stimulus_id='handle-worker-cleanup-1743969857.6038814')
+2025-04-06 17:04:17,605 - ERROR - Removing worker 'tcp://127.0.0.1:61931' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-c2a2f742a55b1871b216a7d112d0a9a6', 'Series-d31ba2416f3d7bb8cc186fa4614a9405'} (stimulus_id='handle-worker-cleanup-1743969857.6038814')
+2025-04-06 17:04:17,605 - INFO - Lost all workers
+2025-04-06 17:04:17,633 - ERROR - Erro durante o treinamento do modelo TPOT: "None of [Index(['Eval Error'], dtype='object')] are in the [index]"
+2025-04-06 17:04:17,686 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743969857.6864946') (0,)
+2025-04-06 17:04:17,687 - INFO - Closing Nanny at 'tcp://127.0.0.1:61921'. Reason: nanny-close
+2025-04-06 17:04:17,687 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 17:04:21,699 - WARNING - Worker process still alive after 4.0 seconds, killing
+2025-04-06 17:04:21,887 - INFO - Worker process 84680 was killed by signal 15
+2025-04-06 17:04:21,907 - INFO - Nanny at 'tcp://127.0.0.1:61921' closed.
+2025-04-06 17:04:21,909 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 17:04:21,910 - INFO - Scheduler closing all comms
+2025-04-06 17:05:19,490 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 17:05:19,492 - INFO - Autenticação bem-sucedida!
+2025-04-06 17:05:19,492 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 17:05:21,925 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 17:05:21,926 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 17:05:21,927 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 17:05:23,027 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-06 17:05:23,027 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:05:23,028 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:05:23,032 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 17:05:23,038 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 17:05:23,057 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 17:05:23,077 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 17:05:23,087 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 17:05:23,088 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 17:05:23,088 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 17:05:23,088 - INFO - ColunaTransformer configurado.
+2025-04-06 17:05:23,307 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 17:05:23,307 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 17:05:23,308 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 17:05:23,309 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 17:05:23,311 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 17:05:23,311 - INFO - Número de amostras: 28449
+2025-04-06 17:05:23,315 - INFO - Treino: 25604, Teste: 2845
+2025-04-06 17:05:23,315 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 17:05:23,419 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 17:05:23,445 - INFO - State start
+2025-04-06 17:05:23,469 - INFO -   Scheduler at:     tcp://127.0.0.1:62118
+2025-04-06 17:05:23,470 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 17:05:23,470 - INFO - Registering Worker plugin shuffle
+2025-04-06 17:05:23,481 - INFO - Receive client connection: Client-79620820-1322-11f0-85e0-0ccc47e8fcbd
+2025-04-06 17:05:23,482 - INFO - Starting established connection to tcp://127.0.0.1:62121
+2025-04-06 17:05:43,597 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 17:05:43,600 - INFO - Scheduler closing all comms
+2025-04-06 17:05:59,493 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 17:05:59,494 - INFO - Autenticação bem-sucedida!
+2025-04-06 17:05:59,495 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 17:06:01,399 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 17:06:01,400 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 17:06:01,400 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 17:06:02,839 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-06 17:06:02,840 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:06:02,840 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:06:02,844 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 17:06:02,851 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 17:06:02,872 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 17:06:02,898 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 17:06:02,910 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 17:06:02,910 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 17:06:02,910 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 17:06:02,911 - INFO - ColunaTransformer configurado.
+2025-04-06 17:06:03,267 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 17:06:03,267 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 17:06:03,268 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 17:06:03,268 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 17:06:03,270 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 17:06:03,270 - INFO - Número de amostras: 28449
+2025-04-06 17:06:03,275 - INFO - Treino: 28164, Teste: 285
+2025-04-06 17:06:03,276 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 17:06:03,394 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 17:06:03,426 - INFO - State start
+2025-04-06 17:06:03,455 - INFO -   Scheduler at:     tcp://127.0.0.1:62158
+2025-04-06 17:06:03,457 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 17:06:03,457 - INFO - Registering Worker plugin shuffle
+2025-04-06 17:06:03,472 - INFO - Receive client connection: Client-9137b10c-1322-11f0-8888-0ccc47e8fcbd
+2025-04-06 17:06:03,472 - INFO - Starting established connection to tcp://127.0.0.1:62161
+2025-04-06 17:06:33,550 - ERROR - Exception while handling op scatter
+Traceback (most recent call last):
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\core.py", line 834, in _handle_comm
+    result = await result
+             ^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\scheduler.py", line 6381, in scatter
+    raise TimeoutError("No valid workers found")
+TimeoutError: No valid workers found
+2025-04-06 17:06:34,943 - ERROR - Erro durante o treinamento do TPOT: No valid workers found
+2025-04-06 17:06:35,022 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 17:06:35,024 - INFO - Scheduler closing all comms
+2025-04-06 17:17:47,010 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 17:17:47,012 - INFO - Autenticação bem-sucedida!
+2025-04-06 17:17:47,012 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 17:17:49,063 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 17:17:49,064 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 17:17:49,064 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 17:17:50,549 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-06 17:17:50,550 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:17:50,551 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:17:50,558 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 17:17:50,569 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 17:17:50,631 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 17:17:50,697 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 17:17:50,720 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 17:17:50,721 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 17:17:50,722 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 17:17:50,722 - INFO - ColunaTransformer configurado.
+2025-04-06 17:17:51,037 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 17:17:51,038 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 17:17:51,039 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 17:17:51,040 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 17:17:51,042 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 17:17:51,042 - INFO - Número de amostras: 28449
+2025-04-06 17:17:51,050 - INFO - Treino: 28164, Teste: 285
+2025-04-06 17:17:51,051 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 17:17:51,207 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 17:17:51,258 - INFO - State start
+2025-04-06 17:17:51,296 - INFO -   Scheduler at:     tcp://127.0.0.1:62502
+2025-04-06 17:17:51,297 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 17:17:51,299 - INFO - Registering Worker plugin shuffle
+2025-04-06 17:17:51,333 - INFO -         Start Nanny at: 'tcp://127.0.0.1:62505'
+2025-04-06 17:18:03,761 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 17:18:03,762 - INFO - Autenticação bem-sucedida!
+2025-04-06 17:18:03,762 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 17:18:06,096 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 17:18:06,097 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 17:18:06,196 - INFO -       Start worker at:      tcp://127.0.0.1:62516
+2025-04-06 17:18:06,196 - INFO -          Listening to:      tcp://127.0.0.1:62516
+2025-04-06 17:18:06,197 - INFO -           Worker name:                          0
+2025-04-06 17:18:06,197 - INFO -          dashboard at:            127.0.0.1:62517
+2025-04-06 17:18:06,198 - INFO - Waiting to connect to:      tcp://127.0.0.1:62502
+2025-04-06 17:18:06,198 - INFO - -------------------------------------------------
+2025-04-06 17:18:06,198 - INFO -               Threads:                          1
+2025-04-06 17:18:06,198 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-gjucyput
+2025-04-06 17:18:06,198 - INFO - -------------------------------------------------
+2025-04-06 17:18:06,202 - INFO - Register worker addr: tcp://127.0.0.1:62516 name: 0
+2025-04-06 17:18:06,204 - INFO - Starting worker compute stream, tcp://127.0.0.1:62516
+2025-04-06 17:18:06,204 - INFO - Starting established connection to tcp://127.0.0.1:62518
+2025-04-06 17:18:06,204 - INFO - Starting Worker plugin shuffle
+2025-04-06 17:18:06,205 - INFO -         Registered to:      tcp://127.0.0.1:62502
+2025-04-06 17:18:06,206 - INFO - -------------------------------------------------
+2025-04-06 17:18:06,206 - INFO - Starting established connection to tcp://127.0.0.1:62502
+2025-04-06 17:18:06,244 - INFO - Receive client connection: Client-400687aa-1324-11f0-973c-0ccc47e8fcbd
+2025-04-06 17:18:06,245 - INFO - Starting established connection to tcp://127.0.0.1:62519
+2025-04-06 17:45:49,239 - INFO - Stopping worker at tcp://127.0.0.1:62516. Reason: worker-close
+2025-04-06 17:45:49,307 - ERROR - Erro durante o treinamento do TPOT: "None of [Index(['Eval Error'], dtype='object')] are in the [index]"
+2025-04-06 17:45:49,310 - INFO - Closing Nanny gracefully at 'tcp://127.0.0.1:62505'. Reason: worker-close
+2025-04-06 17:45:49,313 - WARNING - Async instruction for <Task cancelled name="execute('eval_objective_list-0e0eff236885eed09cc67e98464befe2')" coro=<Worker.execute() done, defined at C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\worker_state_machine.py:3607>> ended with CancelledError
+2025-04-06 17:45:49,313 - INFO - Removing Worker plugin shuffle
+2025-04-06 17:45:49,316 - INFO - Connection to tcp://127.0.0.1:62502 has been closed.
+2025-04-06 17:45:49,331 - INFO - Received 'close-stream' from tcp://127.0.0.1:62518; closing.
+2025-04-06 17:45:49,332 - INFO - Remove worker addr: tcp://127.0.0.1:62516 name: 0 (stimulus_id='handle-worker-cleanup-1743972349.3334088')
+2025-04-06 17:45:49,334 - ERROR - Removing worker 'tcp://127.0.0.1:62516' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-918e823506547efdc4afe8923fdb833f', 'Series-8115b51124865953f4621ff077f944e9'} (stimulus_id='handle-worker-cleanup-1743972349.3334088')
+2025-04-06 17:45:49,338 - INFO - Lost all workers
+2025-04-06 17:45:49,398 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743972349.3983297') (0,)
+2025-04-06 17:45:49,399 - INFO - Closing Nanny at 'tcp://127.0.0.1:62505'. Reason: nanny-close
+2025-04-06 17:45:49,400 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 17:45:53,392 - WARNING - Worker process still alive after 4.0 seconds, killing
+2025-04-06 17:45:53,467 - INFO - Worker process 87620 was killed by signal 15
+2025-04-06 17:45:53,468 - INFO - Nanny at 'tcp://127.0.0.1:62505' closed.
+2025-04-06 17:45:53,470 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 17:45:53,472 - INFO - Scheduler closing all comms
+2025-04-06 17:46:13,914 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 17:46:13,915 - INFO - Autenticação bem-sucedida!
+2025-04-06 17:46:13,915 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 17:46:16,320 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 17:46:16,321 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 17:46:16,321 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 17:46:17,528 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-06 17:46:17,529 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:46:17,530 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 17:46:17,532 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 17:46:17,533 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 17:46:17,536 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 17:46:17,542 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 17:46:17,543 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 17:46:17,544 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 17:46:17,545 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 17:46:17,545 - INFO - ColunaTransformer configurado.
+2025-04-06 17:46:17,651 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 17:46:17,652 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 17:46:17,653 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 17:46:17,654 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 17:46:17,655 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 17:46:17,655 - INFO - Número de amostras: 2845
+2025-04-06 17:46:17,659 - INFO - Treino: 2816, Teste: 29
+2025-04-06 17:46:17,659 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 17:46:17,841 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 17:46:17,877 - INFO - State start
+2025-04-06 17:46:17,908 - INFO -   Scheduler at:     tcp://127.0.0.1:63286
+2025-04-06 17:46:17,909 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 17:46:17,909 - INFO - Registering Worker plugin shuffle
+2025-04-06 17:46:17,939 - INFO -         Start Nanny at: 'tcp://127.0.0.1:63289'
+2025-04-06 17:46:29,881 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 17:46:29,882 - INFO - Autenticação bem-sucedida!
+2025-04-06 17:46:29,882 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 17:46:32,486 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 17:46:32,486 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 17:46:32,611 - INFO -       Start worker at:      tcp://127.0.0.1:63300
+2025-04-06 17:46:32,612 - INFO -          Listening to:      tcp://127.0.0.1:63300
+2025-04-06 17:46:32,612 - INFO -           Worker name:                          0
+2025-04-06 17:46:32,612 - INFO -          dashboard at:            127.0.0.1:63301
+2025-04-06 17:46:32,613 - INFO - Waiting to connect to:      tcp://127.0.0.1:63286
+2025-04-06 17:46:32,613 - INFO - -------------------------------------------------
+2025-04-06 17:46:32,613 - INFO -               Threads:                          1
+2025-04-06 17:46:32,614 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-8p25zp7j
+2025-04-06 17:46:32,614 - INFO - -------------------------------------------------
+2025-04-06 17:46:32,619 - INFO - Register worker addr: tcp://127.0.0.1:63300 name: 0
+2025-04-06 17:46:32,623 - INFO - Starting worker compute stream, tcp://127.0.0.1:63300
+2025-04-06 17:46:32,623 - INFO - Starting established connection to tcp://127.0.0.1:63302
+2025-04-06 17:46:32,624 - INFO - Starting Worker plugin shuffle
+2025-04-06 17:46:32,624 - INFO -         Registered to:      tcp://127.0.0.1:63286
+2025-04-06 17:46:32,625 - INFO - -------------------------------------------------
+2025-04-06 17:46:32,628 - INFO - Starting established connection to tcp://127.0.0.1:63286
+2025-04-06 17:46:32,655 - INFO - Receive client connection: Client-3920337e-1328-11f0-bc64-0ccc47e8fcbd
+2025-04-06 17:46:32,656 - INFO - Starting established connection to tcp://127.0.0.1:63303
+2025-04-06 18:11:40,444 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743973900.4445772') (0,)
+2025-04-06 18:11:40,444 - INFO - Closing Nanny at 'tcp://127.0.0.1:63289'. Reason: nanny-close
+2025-04-06 18:11:40,445 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:11:40,447 - INFO - Stopping worker at tcp://127.0.0.1:63300. Reason: nanny-close
+2025-04-06 18:11:40,448 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:11:40,450 - INFO - Received 'close-stream' from tcp://127.0.0.1:63302; closing.
+2025-04-06 18:11:40,451 - INFO - Remove worker addr: tcp://127.0.0.1:63300 name: 0 (stimulus_id='handle-worker-cleanup-1743973900.451632')
+2025-04-06 18:11:40,451 - ERROR - Removing worker 'tcp://127.0.0.1:63300' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-84de6d0a5b4844313546ab12a348419e', 'Series-51ed617b66507961b264d0e43af74b48'} (stimulus_id='handle-worker-cleanup-1743973900.451632')
+2025-04-06 18:11:40,452 - INFO - Lost all workers
+2025-04-06 18:11:41,861 - INFO - Nanny at 'tcp://127.0.0.1:63289' closed.
+2025-04-06 18:11:41,863 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:11:41,864 - INFO - Scheduler closing all comms
+2025-04-06 18:11:41,867 - INFO - Modelo treinado com sucesso.
+2025-04-06 18:12:56,355 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:12:56,356 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:12:56,357 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:12:59,029 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:12:59,030 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:12:59,031 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:13:00,057 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-06 18:13:00,058 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:13:00,059 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:13:00,064 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:13:00,068 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:13:00,083 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:13:00,099 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:13:00,106 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:13:00,107 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:13:00,110 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:13:00,112 - INFO - ColunaTransformer configurado.
+2025-04-06 18:13:00,234 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:13:00,235 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:13:00,235 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:13:00,235 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:13:00,236 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:13:00,236 - INFO - Número de amostras: 2845
+2025-04-06 18:13:00,237 - INFO - Treino: 2816, Teste: 29
+2025-04-06 18:13:00,237 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:13:00,342 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 18:13:00,368 - INFO - State start
+2025-04-06 18:13:00,391 - INFO -   Scheduler at:     tcp://127.0.0.1:63998
+2025-04-06 18:13:00,391 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 18:13:00,392 - INFO - Registering Worker plugin shuffle
+2025-04-06 18:13:00,420 - INFO -         Start Nanny at: 'tcp://127.0.0.1:64001'
+2025-04-06 18:13:13,451 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:13:13,453 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:13:13,453 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:13:15,954 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:13:15,957 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:13:16,183 - INFO -       Start worker at:      tcp://127.0.0.1:64011
+2025-04-06 18:13:16,184 - INFO -          Listening to:      tcp://127.0.0.1:64011
+2025-04-06 18:13:16,184 - INFO -           Worker name:                          0
+2025-04-06 18:13:16,185 - INFO -          dashboard at:            127.0.0.1:64012
+2025-04-06 18:13:16,185 - INFO - Waiting to connect to:      tcp://127.0.0.1:63998
+2025-04-06 18:13:16,186 - INFO - -------------------------------------------------
+2025-04-06 18:13:16,186 - INFO -               Threads:                          1
+2025-04-06 18:13:16,186 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-oaqi26d9
+2025-04-06 18:13:16,186 - INFO - -------------------------------------------------
+2025-04-06 18:13:16,192 - INFO - Register worker addr: tcp://127.0.0.1:64011 name: 0
+2025-04-06 18:13:16,194 - INFO - Starting worker compute stream, tcp://127.0.0.1:64011
+2025-04-06 18:13:16,194 - INFO - Starting established connection to tcp://127.0.0.1:64013
+2025-04-06 18:13:16,194 - INFO - Starting Worker plugin shuffle
+2025-04-06 18:13:16,195 - INFO -         Registered to:      tcp://127.0.0.1:63998
+2025-04-06 18:13:16,196 - INFO - -------------------------------------------------
+2025-04-06 18:13:16,197 - INFO - Starting established connection to tcp://127.0.0.1:63998
+2025-04-06 18:13:16,232 - INFO - Receive client connection: Client-f4eeadf4-132b-11f0-9c40-0ccc47e8fcbd
+2025-04-06 18:13:16,233 - INFO - Starting established connection to tcp://127.0.0.1:64014
+2025-04-06 18:16:30,894 - INFO - Stopping worker at tcp://127.0.0.1:64011. Reason: worker-close
+2025-04-06 18:16:30,921 - ERROR - Erro durante o treinamento do TPOT: "None of [Index(['Eval Error'], dtype='object')] are in the [index]"
+2025-04-06 18:16:30,939 - INFO - Closing Nanny gracefully at 'tcp://127.0.0.1:64001'. Reason: worker-close
+2025-04-06 18:16:30,941 - WARNING - Async instruction for <Task cancelled name="execute('eval_objective_list-58421b91abd0a720ae70be61ca6fec11')" coro=<Worker.execute() done, defined at C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\worker_state_machine.py:3607>> ended with CancelledError
+2025-04-06 18:16:30,942 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:16:30,944 - INFO - Connection to tcp://127.0.0.1:63998 has been closed.
+2025-04-06 18:16:30,945 - INFO - Received 'close-stream' from tcp://127.0.0.1:64013; closing.
+2025-04-06 18:16:30,947 - INFO - Remove worker addr: tcp://127.0.0.1:64011 name: 0 (stimulus_id='handle-worker-cleanup-1743974190.9475894')
+2025-04-06 18:16:30,949 - ERROR - Removing worker 'tcp://127.0.0.1:64011' caused the cluster to lose scattered data, which can't be recovered: {'Series-51ed617b66507961b264d0e43af74b48', 'DataFrame-84de6d0a5b4844313546ab12a348419e'} (stimulus_id='handle-worker-cleanup-1743974190.9475894')
+2025-04-06 18:16:30,951 - INFO - Lost all workers
+2025-04-06 18:16:30,989 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743974190.988846') (0,)
+2025-04-06 18:16:30,989 - INFO - Closing Nanny at 'tcp://127.0.0.1:64001'. Reason: nanny-close
+2025-04-06 18:16:30,991 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:16:34,981 - WARNING - Worker process still alive after 4.0 seconds, killing
+2025-04-06 18:16:35,108 - INFO - Worker process 42396 was killed by signal 15
+2025-04-06 18:16:35,109 - INFO - Nanny at 'tcp://127.0.0.1:64001' closed.
+2025-04-06 18:16:35,110 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:16:35,111 - INFO - Scheduler closing all comms
+2025-04-06 18:17:09,995 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:17:09,995 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:17:09,996 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:17:12,512 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:17:12,513 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:17:12,513 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:17:13,783 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-06 18:17:13,784 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:17:13,784 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:17:13,785 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:17:13,786 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:17:13,789 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:17:13,792 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:17:13,794 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:17:13,794 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:17:13,794 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:17:13,795 - INFO - ColunaTransformer configurado.
+2025-04-06 18:17:13,831 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:17:13,832 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:17:13,833 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:17:13,834 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:17:13,835 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:17:13,835 - INFO - Número de amostras: 2845
+2025-04-06 18:17:13,839 - INFO - Treino: 2560, Teste: 285
+2025-04-06 18:17:13,840 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:17:13,869 - ERROR - Erro durante o treinamento do TPOT: TPOTEstimator.__init__() got an unexpected keyword argument 'config_dict'
+2025-04-06 18:17:42,301 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:17:42,303 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:17:42,303 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:17:44,660 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:17:44,661 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:17:44,662 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:17:45,679 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-06 18:17:45,679 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:17:45,680 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:17:45,681 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:17:45,682 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:17:45,685 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:17:45,687 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:17:45,690 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:17:45,690 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:17:45,691 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:17:45,691 - INFO - ColunaTransformer configurado.
+2025-04-06 18:17:45,722 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:17:45,723 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:17:45,723 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:17:45,724 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:17:45,724 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:17:45,724 - INFO - Número de amostras: 2845
+2025-04-06 18:17:45,726 - INFO - Treino: 2560, Teste: 285
+2025-04-06 18:17:45,726 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:17:45,742 - ERROR - Erro durante o treinamento do TPOT: TPOTEstimator.__init__() got an unexpected keyword argument 'verbosity'
+2025-04-06 18:18:31,832 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:18:31,833 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:18:31,833 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:18:34,514 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:18:34,515 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:18:34,515 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:18:35,765 - INFO - Dados carregados e amostrados com sucesso: 284 linhas.
+2025-04-06 18:18:35,766 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:18:35,767 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:18:35,773 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:18:35,775 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:18:35,783 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:18:35,788 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:18:35,792 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:18:35,793 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:18:35,794 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:18:35,795 - INFO - ColunaTransformer configurado.
+2025-04-06 18:18:35,847 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:18:35,848 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:18:35,849 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:18:35,850 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:18:35,851 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:18:35,852 - INFO - Número de amostras: 284
+2025-04-06 18:18:35,857 - INFO - Treino: 283, Teste: 1
+2025-04-06 18:18:35,857 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:18:36,024 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 18:18:36,055 - INFO - State start
+2025-04-06 18:18:36,103 - INFO -   Scheduler at:     tcp://127.0.0.1:64163
+2025-04-06 18:18:36,103 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 18:18:36,105 - INFO - Registering Worker plugin shuffle
+2025-04-06 18:18:36,184 - INFO -         Start Nanny at: 'tcp://127.0.0.1:64166'
+2025-04-06 18:18:46,810 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:18:46,811 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:18:46,811 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:18:49,177 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:18:49,177 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:18:49,264 - INFO -       Start worker at:      tcp://127.0.0.1:64177
+2025-04-06 18:18:49,264 - INFO -          Listening to:      tcp://127.0.0.1:64177
+2025-04-06 18:18:49,265 - INFO -           Worker name:                          0
+2025-04-06 18:18:49,265 - INFO -          dashboard at:            127.0.0.1:64178
+2025-04-06 18:18:49,266 - INFO - Waiting to connect to:      tcp://127.0.0.1:64163
+2025-04-06 18:18:49,266 - INFO - -------------------------------------------------
+2025-04-06 18:18:49,266 - INFO -               Threads:                          1
+2025-04-06 18:18:49,267 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-9v_1qrsu
+2025-04-06 18:18:49,267 - INFO - -------------------------------------------------
+2025-04-06 18:18:49,273 - INFO - Register worker addr: tcp://127.0.0.1:64177 name: 0
+2025-04-06 18:18:49,277 - INFO - Starting worker compute stream, tcp://127.0.0.1:64177
+2025-04-06 18:18:49,277 - INFO - Starting established connection to tcp://127.0.0.1:64179
+2025-04-06 18:18:49,277 - INFO - Starting Worker plugin shuffle
+2025-04-06 18:18:49,279 - INFO -         Registered to:      tcp://127.0.0.1:64163
+2025-04-06 18:18:49,279 - INFO - -------------------------------------------------
+2025-04-06 18:18:49,280 - INFO - Starting established connection to tcp://127.0.0.1:64163
+2025-04-06 18:18:49,328 - INFO - Receive client connection: Client-bb78f419-132c-11f0-808c-0ccc47e8fcbd
+2025-04-06 18:18:49,329 - INFO - Starting established connection to tcp://127.0.0.1:64180
+2025-04-06 18:18:55,985 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743974335.9854631') (0,)
+2025-04-06 18:18:55,987 - INFO - Closing Nanny at 'tcp://127.0.0.1:64166'. Reason: nanny-close
+2025-04-06 18:18:55,988 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:18:55,989 - INFO - Stopping worker at tcp://127.0.0.1:64177. Reason: nanny-close
+2025-04-06 18:18:55,990 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:18:55,994 - INFO - Received 'close-stream' from tcp://127.0.0.1:64179; closing.
+2025-04-06 18:18:55,995 - INFO - Connection to tcp://127.0.0.1:64163 has been closed.
+2025-04-06 18:18:55,996 - INFO - Remove worker addr: tcp://127.0.0.1:64177 name: 0 (stimulus_id='handle-worker-cleanup-1743974335.9958963')
+2025-04-06 18:18:55,996 - ERROR - Removing worker 'tcp://127.0.0.1:64177' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-51ecc2dccfd107de96fd2c4737e9958b', 'Series-32ac24acc3808141215b0d675fbcf7ff'} (stimulus_id='handle-worker-cleanup-1743974335.9958963')
+2025-04-06 18:18:55,998 - INFO - Lost all workers
+2025-04-06 18:18:57,699 - INFO - Nanny at 'tcp://127.0.0.1:64166' closed.
+2025-04-06 18:18:57,699 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:18:57,700 - INFO - Scheduler closing all comms
+2025-04-06 18:18:57,702 - INFO - Modelo treinado com sucesso.
+2025-04-06 18:18:57,702 - ERROR - Erro ao avaliar o modelo: 'TPOTRegressor' object has no attribute 'score'
+2025-04-06 18:25:54,882 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:25:54,883 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:25:54,883 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:25:57,372 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:25:57,373 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:25:57,373 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:25:58,600 - INFO - Dados carregados e amostrados com sucesso: 284 linhas.
+2025-04-06 18:25:58,601 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:25:58,601 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:25:58,602 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:25:58,603 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:25:58,605 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:25:58,606 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:25:58,607 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:25:58,609 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:25:58,609 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:25:58,610 - INFO - ColunaTransformer configurado.
+2025-04-06 18:25:58,625 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:25:58,626 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:25:58,626 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:25:58,627 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:25:58,627 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:25:58,628 - INFO - Número de amostras: 284
+2025-04-06 18:25:58,629 - INFO - Treino: 283, Teste: 1
+2025-04-06 18:25:58,630 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:25:58,775 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 18:25:58,820 - INFO - State start
+2025-04-06 18:25:58,849 - INFO -   Scheduler at:     tcp://127.0.0.1:64473
+2025-04-06 18:25:58,850 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 18:25:58,851 - INFO - Registering Worker plugin shuffle
+2025-04-06 18:25:58,888 - INFO -         Start Nanny at: 'tcp://127.0.0.1:64476'
+2025-04-06 18:26:31,742 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:26:31,754 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:26:31,755 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:26:34,246 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:26:34,247 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:26:34,365 - INFO -       Start worker at:      tcp://127.0.0.1:64494
+2025-04-06 18:26:34,366 - INFO -          Listening to:      tcp://127.0.0.1:64494
+2025-04-06 18:26:34,366 - INFO -           Worker name:                          0
+2025-04-06 18:26:34,367 - INFO -          dashboard at:            127.0.0.1:64495
+2025-04-06 18:26:34,368 - INFO - Waiting to connect to:      tcp://127.0.0.1:64473
+2025-04-06 18:26:34,368 - INFO - -------------------------------------------------
+2025-04-06 18:26:34,369 - INFO -               Threads:                          1
+2025-04-06 18:26:34,370 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-kxw90if1
+2025-04-06 18:26:34,370 - INFO - -------------------------------------------------
+2025-04-06 18:26:34,419 - INFO - Register worker addr: tcp://127.0.0.1:64494 name: 0
+2025-04-06 18:26:34,423 - INFO - Starting worker compute stream, tcp://127.0.0.1:64494
+2025-04-06 18:26:34,424 - INFO - Starting established connection to tcp://127.0.0.1:64496
+2025-04-06 18:26:34,424 - INFO - Starting Worker plugin shuffle
+2025-04-06 18:26:34,425 - INFO -         Registered to:      tcp://127.0.0.1:64473
+2025-04-06 18:26:34,426 - INFO - -------------------------------------------------
+2025-04-06 18:26:34,429 - INFO - Starting established connection to tcp://127.0.0.1:64473
+2025-04-06 18:26:34,497 - INFO - Receive client connection: Client-d0bc0caa-132d-11f0-a808-0ccc47e8fcbd
+2025-04-06 18:26:34,498 - INFO - Starting established connection to tcp://127.0.0.1:64497
+2025-04-06 18:26:42,512 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743974802.5121727') (0,)
+2025-04-06 18:26:42,513 - INFO - Closing Nanny at 'tcp://127.0.0.1:64476'. Reason: nanny-close
+2025-04-06 18:26:42,513 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:26:42,514 - INFO - Stopping worker at tcp://127.0.0.1:64494. Reason: nanny-close
+2025-04-06 18:26:42,514 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:26:42,516 - INFO - Connection to tcp://127.0.0.1:64473 has been closed.
+2025-04-06 18:26:42,516 - INFO - Received 'close-stream' from tcp://127.0.0.1:64496; closing.
+2025-04-06 18:26:42,516 - INFO - Remove worker addr: tcp://127.0.0.1:64494 name: 0 (stimulus_id='handle-worker-cleanup-1743974802.5165162')
+2025-04-06 18:26:42,516 - ERROR - Removing worker 'tcp://127.0.0.1:64494' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-51ecc2dccfd107de96fd2c4737e9958b', 'Series-32ac24acc3808141215b0d675fbcf7ff'} (stimulus_id='handle-worker-cleanup-1743974802.5165162')
+2025-04-06 18:26:42,517 - INFO - Lost all workers
+2025-04-06 18:26:43,786 - INFO - Nanny at 'tcp://127.0.0.1:64476' closed.
+2025-04-06 18:26:43,787 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:26:43,789 - INFO - Scheduler closing all comms
+2025-04-06 18:26:43,793 - INFO - Modelo treinado com sucesso.
+2025-04-06 18:26:43,793 - ERROR - Erro ao avaliar o modelo: 'TPOTRegressor' object has no attribute 'score'
+2025-04-06 18:29:57,482 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:29:57,485 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:29:57,485 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:30:00,024 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:30:00,025 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:30:00,027 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:30:01,209 - INFO - Dados carregados e amostrados com sucesso: 284 linhas.
+2025-04-06 18:30:01,210 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:30:01,210 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:30:01,211 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:30:01,212 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:30:01,213 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:30:01,215 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:30:01,216 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:30:01,217 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:30:01,218 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:30:01,218 - INFO - ColunaTransformer configurado.
+2025-04-06 18:30:01,241 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:30:01,242 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:30:01,243 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:30:01,243 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:30:01,244 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:30:01,244 - INFO - Número de amostras: 284
+2025-04-06 18:30:01,248 - INFO - Treino: 283, Teste: 1
+2025-04-06 18:30:01,249 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:30:01,367 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 18:30:01,400 - INFO - State start
+2025-04-06 18:30:01,428 - INFO -   Scheduler at:     tcp://127.0.0.1:64644
+2025-04-06 18:30:01,428 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 18:30:01,428 - INFO - Registering Worker plugin shuffle
+2025-04-06 18:30:01,458 - INFO -         Start Nanny at: 'tcp://127.0.0.1:64647'
+2025-04-06 18:30:13,903 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:30:13,904 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:30:13,905 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:30:16,216 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:30:16,216 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:30:16,300 - INFO -       Start worker at:      tcp://127.0.0.1:64663
+2025-04-06 18:30:16,301 - INFO -          Listening to:      tcp://127.0.0.1:64663
+2025-04-06 18:30:16,301 - INFO -           Worker name:                          0
+2025-04-06 18:30:16,301 - INFO -          dashboard at:            127.0.0.1:64664
+2025-04-06 18:30:16,302 - INFO - Waiting to connect to:      tcp://127.0.0.1:64644
+2025-04-06 18:30:16,302 - INFO - -------------------------------------------------
+2025-04-06 18:30:16,302 - INFO -               Threads:                          1
+2025-04-06 18:30:16,302 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-70q_aumr
+2025-04-06 18:30:16,302 - INFO - -------------------------------------------------
+2025-04-06 18:30:16,306 - INFO - Register worker addr: tcp://127.0.0.1:64663 name: 0
+2025-04-06 18:30:16,307 - INFO - Starting worker compute stream, tcp://127.0.0.1:64663
+2025-04-06 18:30:16,308 - INFO - Starting Worker plugin shuffle
+2025-04-06 18:30:16,308 - INFO - Starting established connection to tcp://127.0.0.1:64665
+2025-04-06 18:30:16,309 - INFO -         Registered to:      tcp://127.0.0.1:64644
+2025-04-06 18:30:16,309 - INFO - -------------------------------------------------
+2025-04-06 18:30:16,310 - INFO - Starting established connection to tcp://127.0.0.1:64644
+2025-04-06 18:30:16,381 - INFO - Receive client connection: Client-54fcef51-132e-11f0-9d94-0ccc47e8fcbd
+2025-04-06 18:30:16,382 - INFO - Starting established connection to tcp://127.0.0.1:64666
+2025-04-06 18:30:23,762 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743975023.7628922') (0,)
+2025-04-06 18:30:23,764 - INFO - Closing Nanny at 'tcp://127.0.0.1:64647'. Reason: nanny-close
+2025-04-06 18:30:23,766 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:30:23,769 - INFO - Stopping worker at tcp://127.0.0.1:64663. Reason: nanny-close
+2025-04-06 18:30:23,771 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:30:23,774 - INFO - Received 'close-stream' from tcp://127.0.0.1:64665; closing.
+2025-04-06 18:30:23,775 - INFO - Connection to tcp://127.0.0.1:64644 has been closed.
+2025-04-06 18:30:23,776 - INFO - Remove worker addr: tcp://127.0.0.1:64663 name: 0 (stimulus_id='handle-worker-cleanup-1743975023.77673')
+2025-04-06 18:30:23,777 - ERROR - Removing worker 'tcp://127.0.0.1:64663' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-51ecc2dccfd107de96fd2c4737e9958b', 'Series-32ac24acc3808141215b0d675fbcf7ff'} (stimulus_id='handle-worker-cleanup-1743975023.77673')
+2025-04-06 18:30:23,780 - INFO - Lost all workers
+2025-04-06 18:30:25,364 - INFO - Nanny at 'tcp://127.0.0.1:64647' closed.
+2025-04-06 18:30:25,365 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:30:25,366 - INFO - Scheduler closing all comms
+2025-04-06 18:30:25,368 - INFO - Modelo treinado com sucesso.
+2025-04-06 18:30:25,372 - INFO - Score no teste: nan
+2025-04-06 18:30:25,418 - INFO - Pipeline otimizado: Pipeline(steps=[('minmaxscaler', MinMaxScaler()),
+                ('rfe',
+                 RFE(estimator=ExtraTreesRegressor(criterion='absolute_error',
+                                                   max_features=0.651217004502,
+                                                   min_samples_leaf=14,
+                                                   min_samples_split=18,
+                                                   n_jobs=1, random_state=42),
+                     step=0.9162776237062)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('binarizer',
+                                                                                 Binariz...
+                              feature_types=None, feature_weights=None,
+                              gamma=0.0153706668713, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None,
+                              learning_rate=0.0354272416933, max_bin=None,
+                              max_cat_threshold=None, max_cat_to_onehot=None,
+                              max_delta_step=None, max_depth=10,
+                              max_leaves=None, min_child_weight=15, missing=nan,
+                              monotone_constraints=None, multi_strategy=None,
+                              n_estimators=100, n_jobs=1, nthread=1, ...))])
+2025-04-06 18:30:25,462 - INFO - Processo concluído com sucesso.
+2025-04-06 18:31:30,729 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:31:30,729 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:31:30,731 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:31:33,405 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:31:33,407 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:31:33,408 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:31:35,052 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-06 18:31:35,053 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:31:35,053 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:31:35,056 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:31:35,058 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:31:35,063 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:31:35,069 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:31:35,072 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:31:35,073 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:31:35,073 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:31:35,074 - INFO - ColunaTransformer configurado.
+2025-04-06 18:31:35,138 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:31:35,138 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:31:35,139 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:31:35,139 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:31:35,140 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:31:35,141 - INFO - Número de amostras: 2845
+2025-04-06 18:31:35,144 - INFO - Treino: 2816, Teste: 29
+2025-04-06 18:31:35,144 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:31:35,334 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 18:31:35,391 - INFO - State start
+2025-04-06 18:31:35,430 - INFO -   Scheduler at:     tcp://127.0.0.1:64745
+2025-04-06 18:31:35,430 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 18:31:35,431 - INFO - Registering Worker plugin shuffle
+2025-04-06 18:31:35,470 - INFO -         Start Nanny at: 'tcp://127.0.0.1:64748'
+2025-04-06 18:31:51,942 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:31:51,943 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:31:51,943 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:31:54,489 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:31:54,489 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:31:54,588 - INFO -       Start worker at:      tcp://127.0.0.1:64760
+2025-04-06 18:31:54,589 - INFO -          Listening to:      tcp://127.0.0.1:64760
+2025-04-06 18:31:54,590 - INFO -           Worker name:                          0
+2025-04-06 18:31:54,590 - INFO -          dashboard at:            127.0.0.1:64761
+2025-04-06 18:31:54,591 - INFO - Waiting to connect to:      tcp://127.0.0.1:64745
+2025-04-06 18:31:54,591 - INFO - -------------------------------------------------
+2025-04-06 18:31:54,591 - INFO -               Threads:                          1
+2025-04-06 18:31:54,592 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-tml_3hg8
+2025-04-06 18:31:54,593 - INFO - -------------------------------------------------
+2025-04-06 18:31:54,598 - INFO - Register worker addr: tcp://127.0.0.1:64760 name: 0
+2025-04-06 18:31:54,601 - INFO - Starting worker compute stream, tcp://127.0.0.1:64760
+2025-04-06 18:31:54,601 - INFO - Starting Worker plugin shuffle
+to tcp://127.0.0.1:64762
+2025-04-06 18:31:54,603 - INFO -         Registered to:      tcp://127.0.0.1:64745
+2025-04-06 18:31:54,604 - INFO - -------------------------------------------------
+2025-04-06 18:31:54,606 - INFO - Starting established connection to tcp://127.0.0.1:64745
+2025-04-06 18:31:54,655 - INFO - Receive client connection: Client-8f8fe050-132e-11f0-b2f8-0ccc47e8fcbd
+2025-04-06 18:31:54,655 - INFO - Starting established connection to tcp://127.0.0.1:64763
+2025-04-06 18:36:13,602 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743975373.602628') (0,)
+2025-04-06 18:36:13,603 - INFO - Closing Nanny at 'tcp://127.0.0.1:64748'. Reason: nanny-close
+2025-04-06 18:36:13,604 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:36:13,606 - INFO - Stopping worker at tcp://127.0.0.1:64760. Reason: nanny-close
+2025-04-06 18:36:13,630 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:36:13,639 - INFO - Connection to tcp://127.0.0.1:64745 has been closed.
+2025-04-06 18:36:13,695 - INFO - Received 'close-stream' from tcp://127.0.0.1:64762; closing.
+2025-04-06 18:36:13,697 - INFO - Remove worker addr: tcp://127.0.0.1:64760 name: 0 (stimulus_id='handle-worker-cleanup-1743975373.6982756')
+2025-04-06 18:36:13,699 - ERROR - Removing worker 'tcp://127.0.0.1:64760' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-84de6d0a5b4844313546ab12a348419e', 'Series-51ed617b66507961b264d0e43af74b48'} (stimulus_id='handle-worker-cleanup-1743975373.6982756')
+2025-04-06 18:36:13,702 - INFO - Lost all workers
+2025-04-06 18:36:15,080 - INFO - Nanny at 'tcp://127.0.0.1:64748' closed.
+2025-04-06 18:36:15,081 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:36:15,082 - INFO - Scheduler closing all comms
+2025-04-06 18:36:15,087 - INFO - Modelo treinado com sucesso.
+2025-04-06 18:36:15,093 - INFO - Score no teste: 0.3888329403519152
+2025-04-06 18:36:15,144 - INFO - Pipeline otimizado: Pipeline(steps=[('minmaxscaler', MinMaxScaler()),
+                ('rfe',
+                 RFE(estimator=ExtraTreesRegressor(criterion='absolute_error',
+                                                   max_features=0.651217004502,
+                                                   min_samples_leaf=14,
+                                                   min_samples_split=18,
+                                                   n_jobs=1, random_state=42),
+                     step=0.9162776237062)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('binarizer',
+                                                                                 Binariz...
+                              feature_types=None, feature_weights=None,
+                              gamma=0.0153706668713, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None,
+                              learning_rate=0.0354272416933, max_bin=None,
+                              max_cat_threshold=None, max_cat_to_onehot=None,
+                              max_delta_step=None, max_depth=10,
+                              max_leaves=None, min_child_weight=15, missing=nan,
+                              monotone_constraints=None, multi_strategy=None,
+                              n_estimators=100, n_jobs=1, nthread=1, ...))])
+2025-04-06 18:36:15,198 - INFO - Processo concluído com sucesso.
+2025-04-06 18:40:07,073 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:40:07,077 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:40:07,079 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:40:09,831 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:40:09,832 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:40:09,832 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-06 18:40:11,256 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-06 18:40:11,257 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:40:11,257 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-06 18:40:11,259 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-06 18:40:11,262 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-06 18:40:11,268 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-06 18:40:11,273 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-06 18:40:11,276 - INFO - Características numéricas identificadas: ['size']
+2025-04-06 18:40:11,277 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-06 18:40:11,277 - INFO - Pipelines de pré-processamento configurados.
+2025-04-06 18:40:11,278 - INFO - ColunaTransformer configurado.
+2025-04-06 18:40:11,326 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-06 18:40:11,327 - INFO - Nomes das colunas transformadas gerados.
+2025-04-06 18:40:11,328 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-06 18:40:11,328 - INFO - Coluna alvo 'price' extraída.
+2025-04-06 18:40:11,329 - INFO - Pré-processamento concluído com sucesso.
+2025-04-06 18:40:11,329 - INFO - Número de amostras: 2845
+2025-04-06 18:40:11,332 - INFO - Treino: 2816, Teste: 29
+2025-04-06 18:40:11,333 - INFO - Tamanho do treino: 2816 | Tamanho do teste: 29
+2025-04-06 18:40:11,334 - INFO - Valores únicos em y_test: [ 2293 13423 10157 10120  1905  4716 98480   656  6750  3047  4564  9790
+ 14656  3765  1938 15000 24950 10431    -1   735 15319  5170  3933  1426
+   664 10075   766  3192 34447]
+2025-04-06 18:40:11,335 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-06 18:40:11,538 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-06 18:40:11,582 - INFO - State start
+2025-04-06 18:40:11,615 - INFO -   Scheduler at:     tcp://127.0.0.1:65026
+2025-04-06 18:40:11,615 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-06 18:40:11,616 - INFO - Registering Worker plugin shuffle
+2025-04-06 18:40:11,662 - INFO -         Start Nanny at: 'tcp://127.0.0.1:65029'
+2025-04-06 18:40:24,680 - INFO - Iniciando autenticação no Kaggle.
+2025-04-06 18:40:24,680 - INFO - Autenticação bem-sucedida!
+2025-04-06 18:40:24,681 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-06 18:40:27,038 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-06 18:40:27,039 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-06 18:40:27,132 - INFO -       Start worker at:      tcp://127.0.0.1:65042
+2025-04-06 18:40:27,133 - INFO -          Listening to:      tcp://127.0.0.1:65042
+2025-04-06 18:40:27,133 - INFO -           Worker name:                          0
+2025-04-06 18:40:27,133 - INFO -          dashboard at:            127.0.0.1:65043
+2025-04-06 18:40:27,133 - INFO - Waiting to connect to:      tcp://127.0.0.1:65026
+2025-04-06 18:40:27,134 - INFO - -------------------------------------------------
+2025-04-06 18:40:27,134 - INFO -               Threads:                          1
+2025-04-06 18:40:27,135 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-0s_jlfq_
+2025-04-06 18:40:27,135 - INFO - -------------------------------------------------
+2025-04-06 18:40:27,141 - INFO - Register worker addr: tcp://127.0.0.1:65042 name: 0
+2025-04-06 18:40:27,144 - INFO - Starting worker compute stream, tcp://127.0.0.1:65042
+2025-04-06 18:40:27,144 - INFO - Starting established connection to tcp://127.0.0.1:65044
+2025-04-06 18:40:27,144 - INFO - Starting Worker plugin shuffle
+2025-04-06 18:40:27,145 - INFO -         Registered to:      tcp://127.0.0.1:65026
+2025-04-06 18:40:27,145 - INFO - -------------------------------------------------
+2025-04-06 18:40:27,148 - INFO - Starting established connection to tcp://127.0.0.1:65026
+2025-04-06 18:40:27,184 - INFO - Receive client connection: Client-c10d9004-132f-11f0-97f0-0ccc47e8fcbd
+2025-04-06 18:40:27,184 - INFO - Starting established connection to tcp://127.0.0.1:65045
+2025-04-06 18:45:13,520 - INFO - Retire worker addresses (stimulus_id='retire-workers-1743975913.5208662') (0,)
+2025-04-06 18:45:13,523 - INFO - Closing Nanny at 'tcp://127.0.0.1:65029'. Reason: nanny-close
+2025-04-06 18:45:13,524 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-06 18:45:13,527 - INFO - Stopping worker at tcp://127.0.0.1:65042. Reason: nanny-close
+2025-04-06 18:45:13,530 - INFO - Removing Worker plugin shuffle
+2025-04-06 18:45:13,538 - INFO - Received 'close-stream' from tcp://127.0.0.1:65044; closing.
+2025-04-06 18:45:13,538 - INFO - Connection to tcp://127.0.0.1:65026 has been closed.
+2025-04-06 18:45:13,541 - INFO - Remove worker addr: tcp://127.0.0.1:65042 name: 0 (stimulus_id='handle-worker-cleanup-1743975913.5403473')
+2025-04-06 18:45:13,543 - ERROR - Removing worker 'tcp://127.0.0.1:65042' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-84de6d0a5b4844313546ab12a348419e', 'Series-51ed617b66507961b264d0e43af74b48'} (stimulus_id='handle-worker-cleanup-1743975913.5403473')
+2025-04-06 18:45:13,544 - INFO - Lost all workers
+2025-04-06 18:45:15,412 - INFO - Nanny at 'tcp://127.0.0.1:65029' closed.
+2025-04-06 18:45:15,413 - INFO - Closing scheduler. Reason: unknown
+2025-04-06 18:45:15,415 - INFO - Scheduler closing all comms
+2025-04-06 18:45:15,421 - INFO - Modelo treinado com sucesso.
+2025-04-06 18:45:15,430 - INFO - Score no teste: 0.3888329403519152
+2025-04-06 18:45:15,494 - INFO - Pipeline otimizado: Pipeline(steps=[('minmaxscaler', MinMaxScaler()),
+                ('rfe',
+                 RFE(estimator=ExtraTreesRegressor(criterion='absolute_error',
+                                                   max_features=0.651217004502,
+                                                   min_samples_leaf=14,
+                                                   min_samples_split=18,
+                                                   n_jobs=1, random_state=42),
+                     step=0.9162776237062)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('binarizer',
+                                                                                 Binariz...
+                              feature_types=None, feature_weights=None,
+                              gamma=0.0153706668713, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None,
+                              learning_rate=0.0354272416933, max_bin=None,
+                              max_cat_threshold=None, max_cat_to_onehot=None,
+                              max_delta_step=None, max_depth=10,
+                              max_leaves=None, min_child_weight=15, missing=nan,
+                              monotone_constraints=None, multi_strategy=None,
+                              n_estimators=100, n_jobs=1, nthread=1, ...))])
+2025-04-06 18:45:15,555 - INFO - Processo concluído com sucesso.
