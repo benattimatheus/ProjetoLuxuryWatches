@@ -9,7 +9,7 @@ def train_tpot_model(file_path: str, target_column: str):
     logger.info(f"Carregando os dados do arquivo: {file_path}")
     try:
         data = pd.read_csv(file_path)
-        data = data.sample(frac=0.01, random_state=42)  # Usa apenas 0.1% do dataset para acelerar
+        data = data.sample(frac=0.1, random_state=42)  # Usa apenas 0.1% do dataset para acelerar
         logger.info(f"Dados carregados e amostrados com sucesso: {len(data)} linhas.")
     except Exception as e:
         logger.error(f"Erro ao carregar os dados: {e}")
@@ -30,7 +30,7 @@ def train_tpot_model(file_path: str, target_column: str):
         logger.info(f"Número de amostras: {X_preprocessed.shape[0]}")
 
     # Divisão dos dados com uma pequena fatia de teste (0.1%)
-    X_train, X_test, y_train, y_test = train_test_split(X_preprocessed, y, test_size=0.01, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X_preprocessed, y, test_size=0.1, random_state=42)
     logger.info(f"Treino: {len(X_train)}, Teste: {len(X_test)}")
     logger.info(f"Tamanho do treino: {len(X_train)} | Tamanho do teste: {len(X_test)}")
     logger.info(f"Valores únicos em y_test: {y_test.unique()}")
@@ -38,8 +38,8 @@ def train_tpot_model(file_path: str, target_column: str):
     try:
 
         tpot = TPOTRegressor(
-            generations=1,
-            population_size=5,
+            generations=5,
+            population_size=20,
             random_state=42,
             n_jobs=1
         )

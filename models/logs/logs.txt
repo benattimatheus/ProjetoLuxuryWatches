@@ -1186,3 +1186,895 @@ to tcp://127.0.0.1:64762
                               monotone_constraints=None, multi_strategy=None,
                               n_estimators=100, n_jobs=1, nthread=1, ...))])
 2025-04-06 18:45:15,555 - INFO - Processo concluído com sucesso.
+2025-04-13 17:40:29,284 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 17:40:29,317 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 17:40:29,318 - INFO - Pyspark backend NOT loaded
+2025-04-13 17:40:29,319 - INFO - Python backend loaded
+2025-04-13 17:42:12,143 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 17:42:12,157 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 17:42:12,157 - INFO - Pyspark backend NOT loaded
+2025-04-13 17:42:12,158 - INFO - Python backend loaded
+2025-04-13 17:42:52,223 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 17:42:52,266 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 17:42:52,269 - INFO - Pyspark backend NOT loaded
+2025-04-13 17:42:52,269 - INFO - Python backend loaded
+2025-04-13 17:45:20,766 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 17:45:20,776 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 17:45:20,776 - INFO - Pyspark backend NOT loaded
+2025-04-13 17:45:20,777 - INFO - Python backend loaded
+2025-04-13 17:47:14,053 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 17:47:14,068 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 17:47:14,071 - INFO - Pyspark backend NOT loaded
+2025-04-13 17:47:14,071 - INFO - Python backend loaded
+2025-04-13 17:47:18,724 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 17:47:18,751 - INFO - Coluna de destino removida do conjunto de dados.
+2025-04-13 17:47:18,792 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 17:47:19,125 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 17:47:19,352 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 17:47:19,423 - INFO - Características numéricas identificadas: ['size']
+2025-04-13 17:47:19,424 - INFO - Características categóricas identificadas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 17:47:19,424 - INFO - Pipelines de pré-processamento configurados.
+2025-04-13 17:47:19,424 - INFO - ColunaTransformer configurado.
+2025-04-13 17:47:22,115 - INFO - Transformações realizadas no conjunto de dados.
+2025-04-13 17:47:22,115 - INFO - Nomes das colunas transformadas gerados.
+2025-04-13 17:47:22,117 - INFO - Conjunto de dados pré-processado convertido para DataFrame.
+2025-04-13 17:47:22,119 - INFO - Coluna alvo 'price' extraída.
+2025-04-13 18:07:38,581 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:07:38,611 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:07:38,612 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:07:38,613 - INFO - Python backend loaded
+2025-04-13 18:07:42,322 - INFO - Executando pipeline completa (download, EDA, treino)...
+2025-04-13 18:07:42,322 - INFO - Iniciando autenticação no Kaggle.
+2025-04-13 18:07:42,323 - INFO - Autenticação bem-sucedida!
+2025-04-13 18:07:42,323 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-13 18:07:44,869 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset
+2025-04-13 18:07:44,869 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-13 18:07:45,983 - INFO - Dataset carregado com sucesso: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:11:19,404 - INFO - Relatório ydata-profiling gerado com sucesso.
+2025-04-13 18:11:19,441 - INFO - Relatórios de EDA gerados com sucesso.
+2025-04-13 18:11:19,451 - INFO - Treinando modelo com TPOT e analisando features com SHAP...
+2025-04-13 18:11:19,452 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-13 18:11:19,452 - INFO - Carregando os dados brutos.
+2025-04-13 18:11:19,452 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:11:20,154 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:11:20,200 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-13 18:11:20,201 - INFO - Dados carregados com sucesso. Shape dos dados: (2845, 14)
+2025-04-13 18:11:20,201 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:11:20,202 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:11:20,208 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 18:11:20,212 - INFO - Linhas com valor -1 removidas da coluna alvo.
+2025-04-13 18:11:20,217 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 18:11:20,224 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 18:11:20,228 - INFO - Características numéricas: ['size']
+2025-04-13 18:11:20,229 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 18:11:20,230 - INFO - Preprocessor montado com sucesso.
+2025-04-13 18:11:20,278 - INFO - Pré-processamento aplicado.
+2025-04-13 18:11:20,279 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 18:11:20,279 - INFO - Pré-processamento dos dados concluído.
+2025-04-13 18:11:20,280 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (2711, 13)
+2025-04-13 18:11:20,281 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-13 18:11:20,281 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-13 18:11:20,281 - INFO - Iniciando o treinamento do modelo.
+2025-04-13 18:11:20,282 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-13 18:11:20,282 - INFO - Shape de X: (2711, 12)
+2025-04-13 18:11:20,283 - INFO - Shape de y: (2711,)
+2025-04-13 18:11:20,283 - INFO - Shape de X após o pré-processamento: (2711, 12)
+2025-04-13 18:11:20,284 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-13 18:11:20,286 - INFO - 0    4.100694e-02
+1   -5.231231e-01
+2   -4.453761e-16
+3    4.797747e-01
+4   -2.097175e-01
+Name: size, dtype: float64
+2025-04-13 18:11:20,289 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-13 18:11:20,291 - INFO - 0    4.100694e-02
+1   -5.231231e-01
+2   -4.453761e-16
+3    4.797747e-01
+4   -2.097175e-01
+Name: size, dtype: float64
+2025-04-13 18:11:20,292 - INFO - Número de valores NaN após conversão: 0
+2025-04-13 18:11:20,296 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 18:11:20,298 - INFO - Shape de X após conversão para numérico: (2711, 12)
+2025-04-13 18:11:20,300 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-13 18:11:20,300 - INFO - Shape de X antes do treinamento: (2711, 12)
+2025-04-13 18:11:20,301 - INFO - Shape de y antes do treinamento: (2711,)
+2025-04-13 18:11:23,618 - ERROR - Erro com o modelo gradient_boosting: 
+All the 135 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+135 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\pipeline.py", line 475, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_gb.py", line 659, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 1289, in _check_y
+    y = check_array(
+        ^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 1049, in check_array
+    _assert_all_finite(
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 126, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 175, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input y contains NaN.
+
+2025-04-13 18:11:23,619 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-13 18:11:23,619 - INFO - Shape de X antes do treinamento: (2711, 12)
+2025-04-13 18:11:23,619 - INFO - Shape de y antes do treinamento: (2711,)
+2025-04-13 18:11:23,713 - ERROR - Erro com o modelo ada_boost: 
+All the 45 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+45 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\pipeline.py", line 475, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 133, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 1301, in _check_y
+    _assert_all_finite(y, input_name="y", estimator_name=estimator_name)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 126, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 175, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input y contains NaN.
+
+2025-04-13 18:11:23,714 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-13 18:11:23,714 - INFO - Shape de X antes do treinamento: (2711, 12)
+2025-04-13 18:11:23,714 - INFO - Shape de y antes do treinamento: (2711,)
+2025-04-13 18:11:24,428 - ERROR - Erro com o modelo xgboost: 
+All the 135 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+135 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\pipeline.py", line 475, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\sklearn.py", line 1222, in fit
+    train_dmatrix, evals = _wrap_evaluation_matrices(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\sklearn.py", line 628, in _wrap_evaluation_matrices
+    train_dmatrix = create_dmatrix(
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\sklearn.py", line 1137, in _create_dmatrix
+    return QuantileDMatrix(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 1614, in __init__
+    self._init(
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 1678, in _init
+    it.reraise()
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 572, in reraise
+    raise exc  # pylint: disable=raising-bad-type
+    ^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 553, in _handle_exception
+    return fn()
+           ^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 640, in <lambda>
+    return self._handle_exception(lambda: int(self.next(input_data)), 0)
+                                              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\data.py", line 1654, in next
+    input_data(**self.kwargs)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 629, in input_data
+    self.proxy.set_info(
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 961, in set_info
+    self.set_label(label)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 1099, in set_label
+    dispatch_meta_backend(self, label, "label", "float")
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\data.py", line 1603, in dispatch_meta_backend
+    _meta_from_pandas_series(data, name, dtype, handle)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\data.py", line 713, in _meta_from_pandas_series
+    _meta_from_numpy(data, name, dtype, handle)
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\data.py", line 1533, in _meta_from_numpy
+    _check_call(_LIB.XGDMatrixSetInfoFromInterface(handle, c_str(field), interface_str))
+  File "C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\xgboost\core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [18:11:24] C:\actions-runner\_work\xgboost\xgboost\src\data\data.cc:550: Check failed: valid: Label contains NaN, infinity or a value too large.
+
+2025-04-13 18:11:24,430 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-13 18:11:24,430 - INFO - Shape de X antes do treinamento: (2711, 12)
+2025-04-13 18:11:24,430 - INFO - Shape de y antes do treinamento: (2711,)
+2025-04-13 18:11:58,560 - INFO - Modelo: lightgbm | Melhor R² CV: nan
+2025-04-13 18:11:58,561 - INFO - 
+Modelo Selecionado: None com R² CV: -inf
+2025-04-13 18:11:58,561 - WARNING - Falha no treinamento do modelo. Nenhum modelo retornado.
+2025-04-13 18:11:58,561 - WARNING - Falha no treinamento do modelo.
+2025-04-13 18:11:58,562 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-13 18:11:58,562 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-13 18:11:58,562 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-13 18:11:58,563 - INFO - Shape de X para cálculo dos valores SHAP: (2711, 12)
+2025-04-13 18:11:58,564 - ERROR - Erro ao calcular os valores SHAP: 'NoneType' object has no attribute 'predict'
+2025-04-13 18:11:58,564 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-13 18:11:58,564 - INFO - Análise das features concluída.
+2025-04-13 18:11:58,566 - INFO - Modelo treinado com sucesso. Gerando gráfico SHAP...
+2025-04-13 18:16:26,307 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:16:26,320 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:16:26,322 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:16:26,322 - INFO - Python backend loaded
+2025-04-13 18:26:50,302 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:26:50,314 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:26:50,315 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:26:50,315 - INFO - Python backend loaded
+2025-04-13 18:26:52,584 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 18:26:52,584 - INFO - Executando treinamento com TPOT...
+2025-04-13 18:26:52,585 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:26:53,167 - INFO - Dados carregados e amostrados com sucesso: 2845 linhas.
+2025-04-13 18:26:53,167 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:26:53,168 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:26:53,171 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 18:26:53,174 - INFO - Linhas com valor -1 removidas da coluna alvo.
+2025-04-13 18:26:53,177 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 18:26:53,187 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 18:26:53,190 - INFO - Características numéricas: ['size']
+2025-04-13 18:26:53,191 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 18:26:53,191 - INFO - Preprocessor montado com sucesso.
+2025-04-13 18:26:53,256 - INFO - Pré-processamento aplicado.
+2025-04-13 18:26:53,257 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 18:26:53,258 - INFO - Pré-processamento concluído com sucesso.
+2025-04-13 18:26:53,258 - INFO - Número de amostras: 2700
+2025-04-13 18:26:53,261 - INFO - Treino: 2430, Teste: 270
+2025-04-13 18:26:53,261 - INFO - Tamanho do treino: 2430 | Tamanho do teste: 270
+2025-04-13 18:26:53,266 - INFO - Valores únicos em y_test: [  2865.   1478.  49863.  83999.   1977.   2211.   7331.  10299.  40107.
+  10700.   2850.  43950.   2881.   8417.    963.   7980.   6999.  12952.
+   6800.    409.   3980.  14950.  11864.   6889.  27250.  36805.    443.
+   4038.   9885.   4235.   7062.   1379.  25750.   8756.   6901.  10063.
+   5349.   4012.  16138.  33283.  17560.    679.   2995.  18408.  15795.
+   5130.     nan  28868.   9995.  45141.   9508.  17950.   2049.   7395.
+   3990.   1310.   5815.    332.   1750.  25993.    449.  15084.  22698.
+  21320.  46833.   4521.   1850.  56590.   5172.   6895.   4470.  40685.
+  18428.   2874.  10214.   4446.   9229.   3278.   6191.   3334.  49969.
+   3460.  26665.   8167.   9206.  12900.   2913.    691.   3968.   6849.
+   4484.  16950.    766.   4051.  18250.   1482.  97500. 135000.   2301.
+   6142.   1650.  58938.  32950.   2113.   1446.  27085.    203.   4200.
+  98480.    270.   6650.  14262.  21467.  71713.    759.   5118.   4432.
+   9473.   5754.    391. 101299.   2013.   5722.   4395.   1840.  26693.
+   8298.  10900.  16104.   3685.   1254.  12950.  10158.    390.   1388.
+   3530.   7205.   1422.   5803.  10950.   2095.   4197.   3114.   9875.
+   6526.   1425.   5180.  94000.   8095.   2433.  26785. 119341.  24500.
+  18557.   6057.  11174. 136999.   7950.  72003.    457.    155.   4914.
+   1357.  16999.   4729. 117065.  11580.  14571.  19034.   1504.   3680.
+   5166.  19656.    857.  43096.   9250.   9830.  16732. 107223.  14047.
+    894.   3420.  74185.   3173.   3796.   8499.   5750.  43808.   1161.
+   3650.  20128.   1659.   1146.   1500.   1513.   3277.   2300.   3933.
+   4979.  38334.    209.   3313.  26775.  14671.    555.   5997. 142513.
+   5626.  11500.  22060.   5073.  13800.   2895.  19216.    558.  77928.
+   6153.   6012.   3761.   1475.   1547.  10157.  10730.   4129.   3393.
+   2003.   3434.  16247.  14445.  50206.   1062.   2045.    206.   7790.
+   4000.  11943.   1764.    781.  18733.   5403.  15319.    198.   6493.
+  13487.   6968.  13100.   6094.   3149.  11350.  15000.   3077.  63290.
+   5521.   4047.  17550.   2292.  11768.   9222.  48100.  15351.   1898.
+   4774. 120000.   5467.    299.]
+2025-04-13 18:26:53,267 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-13 18:26:53,438 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-13 18:26:53,486 - INFO - State start
+2025-04-13 18:26:53,511 - INFO -   Scheduler at:     tcp://127.0.0.1:53877
+2025-04-13 18:26:53,511 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-13 18:26:53,511 - INFO - Registering Worker plugin shuffle
+2025-04-13 18:26:53,539 - INFO -         Start Nanny at: 'tcp://127.0.0.1:53880'
+2025-04-13 18:27:03,441 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:27:03,457 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:27:03,460 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:27:03,460 - INFO - Python backend loaded
+2025-04-13 18:27:06,164 - INFO -       Start worker at:      tcp://127.0.0.1:53895
+2025-04-13 18:27:06,166 - INFO -          Listening to:      tcp://127.0.0.1:53895
+2025-04-13 18:27:06,166 - INFO -           Worker name:                          0
+2025-04-13 18:27:06,167 - INFO -          dashboard at:            127.0.0.1:53896
+2025-04-13 18:27:06,167 - INFO - Waiting to connect to:      tcp://127.0.0.1:53877
+2025-04-13 18:27:06,167 - INFO - -------------------------------------------------
+2025-04-13 18:27:06,168 - INFO -               Threads:                          1
+2025-04-13 18:27:06,168 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-xhh05qho
+2025-04-13 18:27:06,169 - INFO - -------------------------------------------------
+2025-04-13 18:27:06,176 - INFO - Register worker addr: tcp://127.0.0.1:53895 name: 0
+2025-04-13 18:27:06,180 - INFO - Starting worker compute stream, tcp://127.0.0.1:53895
+2025-04-13 18:27:06,181 - INFO - Starting established connection to tcp://127.0.0.1:53897
+2025-04-13 18:27:06,181 - INFO - Starting Worker plugin shuffle
+2025-04-13 18:27:06,183 - INFO -         Registered to:      tcp://127.0.0.1:53877
+2025-04-13 18:27:06,183 - INFO - -------------------------------------------------
+2025-04-13 18:27:06,189 - INFO - Starting established connection to tcp://127.0.0.1:53877
+2025-04-13 18:27:06,236 - INFO - Receive client connection: Client-0c8aaef2-18ae-11f0-a74c-0ccc47e8fcbd
+2025-04-13 18:27:06,236 - INFO - Starting established connection to tcp://127.0.0.1:53898
+2025-04-13 18:27:23,896 - ERROR - Erro durante o treinamento do TPOT: No individuals could be evaluated in the initial population. This may indicate a bug in the configuration, included models, or objective functions. Set verbose>=4 to see the errors that caused individuals to fail.
+2025-04-13 18:27:23,908 - INFO - Retire worker addresses (stimulus_id='retire-workers-1744579643.9086528') (0,)
+2025-04-13 18:27:23,909 - INFO - Closing Nanny at 'tcp://127.0.0.1:53880'. Reason: nanny-close
+2025-04-13 18:27:23,909 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-13 18:27:23,911 - INFO - Stopping worker at tcp://127.0.0.1:53895. Reason: nanny-close
+2025-04-13 18:27:23,911 - INFO - Removing Worker plugin shuffle
+2025-04-13 18:27:23,913 - INFO - Connection to tcp://127.0.0.1:53877 has been closed.
+2025-04-13 18:27:23,914 - INFO - Received 'close-stream' from tcp://127.0.0.1:53897; closing.
+2025-04-13 18:27:23,914 - INFO - Remove worker addr: tcp://127.0.0.1:53895 name: 0 (stimulus_id='handle-worker-cleanup-1744579643.9153864')
+2025-04-13 18:27:23,915 - ERROR - Removing worker 'tcp://127.0.0.1:53895' caused the cluster to lose scattered data, which can't be recovered: {'Series-ed7cf1569139eb0f82bd7e333b0983dc', 'DataFrame-98ef17dc4d052b31ea0d391ec64db143'} (stimulus_id='handle-worker-cleanup-1744579643.9153864')
+2025-04-13 18:27:23,915 - INFO - Lost all workers
+2025-04-13 18:27:24,884 - INFO - Nanny at 'tcp://127.0.0.1:53880' closed.
+2025-04-13 18:27:24,884 - INFO - Closing scheduler. Reason: unknown
+2025-04-13 18:27:24,885 - INFO - Scheduler closing all comms
+2025-04-13 18:33:12,085 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:33:12,095 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:33:12,097 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:33:12,097 - INFO - Python backend loaded
+2025-04-13 18:33:14,460 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 18:33:14,461 - INFO - Executando treinamento com TPOT...
+2025-04-13 18:33:14,461 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:33:15,272 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-13 18:33:15,273 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:33:15,273 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:33:15,294 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 18:33:15,311 - INFO - Linhas com valor -1 removidas da coluna alvo.
+2025-04-13 18:33:15,324 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 18:33:15,358 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 18:33:15,371 - INFO - Características numéricas: ['size']
+2025-04-13 18:33:15,371 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 18:33:15,371 - INFO - Preprocessor montado com sucesso.
+2025-04-13 18:33:15,640 - INFO - Pré-processamento aplicado.
+2025-04-13 18:33:15,641 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 18:33:15,645 - INFO - Pré-processamento concluído com sucesso.
+2025-04-13 18:33:15,646 - INFO - Número de amostras: 27046
+2025-04-13 18:33:15,654 - INFO - Treino: 24341, Teste: 2705
+2025-04-13 18:33:15,654 - INFO - Tamanho do treino: 24341 | Tamanho do teste: 2705
+2025-04-13 18:33:15,656 - INFO - Valores únicos em y_test: [18227. 27367.   486. ...  5454. 25099.  7810.]
+2025-04-13 18:33:15,656 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-13 18:33:15,793 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-13 18:33:15,824 - INFO - State start
+2025-04-13 18:33:15,885 - INFO -   Scheduler at:     tcp://127.0.0.1:54264
+2025-04-13 18:33:15,887 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-13 18:33:15,889 - INFO - Registering Worker plugin shuffle
+2025-04-13 18:33:15,986 - INFO -         Start Nanny at: 'tcp://127.0.0.1:54267'
+2025-04-13 18:33:25,557 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:33:25,569 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:33:25,569 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:33:25,570 - INFO - Python backend loaded
+2025-04-13 18:33:28,063 - INFO -       Start worker at:      tcp://127.0.0.1:54281
+2025-04-13 18:33:28,063 - INFO -          Listening to:      tcp://127.0.0.1:54281
+2025-04-13 18:33:28,064 - INFO -           Worker name:                          0
+2025-04-13 18:33:28,064 - INFO -          dashboard at:            127.0.0.1:54282
+2025-04-13 18:33:28,065 - INFO - Waiting to connect to:      tcp://127.0.0.1:54264
+2025-04-13 18:33:28,065 - INFO - -------------------------------------------------
+2025-04-13 18:33:28,066 - INFO -               Threads:                          1
+2025-04-13 18:33:28,066 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-kyf1gkh7
+2025-04-13 18:33:28,066 - INFO - -------------------------------------------------
+2025-04-13 18:33:28,073 - INFO - Register worker addr: tcp://127.0.0.1:54281 name: 0
+2025-04-13 18:33:28,076 - INFO - Starting worker compute stream, tcp://127.0.0.1:54281
+2025-04-13 18:33:28,078 - INFO - Starting established connection to tcp://127.0.0.1:54283
+2025-04-13 18:33:28,078 - INFO - Starting Worker plugin shuffle
+2025-04-13 18:33:28,080 - INFO -         Registered to:      tcp://127.0.0.1:54264
+2025-04-13 18:33:28,080 - INFO - -------------------------------------------------
+2025-04-13 18:33:28,088 - INFO - Starting established connection to tcp://127.0.0.1:54264
+2025-04-13 18:33:28,147 - INFO - Receive client connection: Client-f02d95db-18ae-11f0-9b9c-0ccc47e8fcbd
+2025-04-13 18:33:28,148 - INFO - Starting established connection to tcp://127.0.0.1:54284
+2025-04-13 18:33:57,493 - ERROR - Erro durante o treinamento do TPOT: No individuals could be evaluated in the initial population. This may indicate a bug in the configuration, included models, or objective functions. Set verbose>=4 to see the errors that caused individuals to fail.
+2025-04-13 18:33:57,501 - INFO - Retire worker addresses (stimulus_id='retire-workers-1744580037.5007505') (0,)
+2025-04-13 18:33:57,501 - INFO - Closing Nanny at 'tcp://127.0.0.1:54267'. Reason: nanny-close
+2025-04-13 18:33:57,501 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-13 18:33:57,502 - INFO - Stopping worker at tcp://127.0.0.1:54281. Reason: nanny-close
+2025-04-13 18:33:57,502 - INFO - Removing Worker plugin shuffle
+2025-04-13 18:33:57,504 - INFO - Connection to tcp://127.0.0.1:54264 has been closed.
+2025-04-13 18:33:57,504 - INFO - Received 'close-stream' from tcp://127.0.0.1:54283; closing.
+2025-04-13 18:33:57,504 - INFO - Remove worker addr: tcp://127.0.0.1:54281 name: 0 (stimulus_id='handle-worker-cleanup-1744580037.5046961')
+2025-04-13 18:33:57,505 - ERROR - Removing worker 'tcp://127.0.0.1:54281' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-fd5c3027a04760f7dc0e556f9cd36d4e', 'Series-2032e34f2d934c0da33b2dee5e2673f2'} (stimulus_id='handle-worker-cleanup-1744580037.5046961')
+2025-04-13 18:33:57,505 - INFO - Lost all workers
+2025-04-13 18:33:58,722 - INFO - Nanny at 'tcp://127.0.0.1:54267' closed.
+2025-04-13 18:33:58,724 - INFO - Closing scheduler. Reason: unknown
+2025-04-13 18:33:58,725 - INFO - Scheduler closing all comms
+2025-04-13 18:38:58,701 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:38:58,723 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:38:58,724 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:38:58,726 - INFO - Python backend loaded
+2025-04-13 18:39:03,344 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 18:39:03,344 - INFO - Executando treinamento com TPOT...
+2025-04-13 18:39:03,345 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:39:04,687 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-13 18:39:04,688 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:39:04,689 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:39:04,778 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 18:39:04,811 - INFO - Linhas com valor -1 removidas da coluna alvo.
+2025-04-13 18:39:04,827 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 18:39:04,874 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 18:39:04,888 - INFO - Características numéricas: ['size']
+2025-04-13 18:39:04,889 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 18:39:04,890 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-13 18:39:05,025 - ERROR - Erro durante o pré-processamento: The target column y must not contain missing values.
+2025-04-13 18:40:53,724 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:40:53,788 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:40:53,792 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:40:53,794 - INFO - Python backend loaded
+2025-04-13 18:40:57,055 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 18:40:57,056 - INFO - Executando treinamento com TPOT...
+2025-04-13 18:40:57,056 - INFO - Carregando os dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 18:40:57,734 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-13 18:40:57,734 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:40:57,735 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 18:40:57,808 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 18:40:57,839 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-13 18:40:57,848 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 18:40:57,866 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 18:40:57,875 - INFO - Características numéricas: ['size']
+2025-04-13 18:40:57,875 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 18:40:57,875 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-13 18:40:58,344 - INFO - Pré-processamento aplicado.
+2025-04-13 18:40:58,345 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 18:40:58,349 - INFO - Pré-processamento concluído com sucesso.
+2025-04-13 18:40:58,350 - INFO - Número de amostras: 26996
+2025-04-13 18:40:58,361 - INFO - Treino: 24296, Teste: 2700
+2025-04-13 18:40:58,361 - INFO - Tamanho do treino: 24296 | Tamanho do teste: 2700
+2025-04-13 18:40:58,365 - INFO - Valores únicos em y_test: [ 9678.   747.  9490. ... 49969.  3468.  5307.]
+2025-04-13 18:40:58,366 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-13 18:40:58,523 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-13 18:40:58,555 - INFO - State start
+2025-04-13 18:40:58,581 - INFO -   Scheduler at:     tcp://127.0.0.1:54734
+2025-04-13 18:40:58,581 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-13 18:40:58,582 - INFO - Registering Worker plugin shuffle
+2025-04-13 18:40:58,613 - INFO -         Start Nanny at: 'tcp://127.0.0.1:54737'
+2025-04-13 18:41:07,061 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 18:41:07,072 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 18:41:07,073 - INFO - Pyspark backend NOT loaded
+2025-04-13 18:41:07,074 - INFO - Python backend loaded
+2025-04-13 18:41:09,668 - INFO -       Start worker at:      tcp://127.0.0.1:54767
+2025-04-13 18:41:09,669 - INFO -          Listening to:      tcp://127.0.0.1:54767
+2025-04-13 18:41:09,669 - INFO -           Worker name:                          0
+2025-04-13 18:41:09,670 - INFO -          dashboard at:            127.0.0.1:54768
+2025-04-13 18:41:09,670 - INFO - Waiting to connect to:      tcp://127.0.0.1:54734
+2025-04-13 18:41:09,670 - INFO - -------------------------------------------------
+2025-04-13 18:41:09,671 - INFO -               Threads:                          1
+2025-04-13 18:41:09,671 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-1wd5w756
+2025-04-13 18:41:09,671 - INFO - -------------------------------------------------
+2025-04-13 18:41:09,679 - INFO - Register worker addr: tcp://127.0.0.1:54767 name: 0
+2025-04-13 18:41:09,687 - INFO - Starting worker compute stream, tcp://127.0.0.1:54767
+2025-04-13 18:41:09,688 - INFO - Starting established connection to tcp://127.0.0.1:54769
+2025-04-13 18:41:09,688 - INFO - Starting Worker plugin shuffle
+2025-04-13 18:41:09,691 - INFO -         Registered to:      tcp://127.0.0.1:54734
+2025-04-13 18:41:09,691 - INFO - -------------------------------------------------
+2025-04-13 18:41:09,696 - INFO - Starting established connection to tcp://127.0.0.1:54734
+2025-04-13 18:41:09,731 - INFO - Receive client connection: Client-034d79d2-18b0-11f0-a868-0ccc47e8fcbd
+2025-04-13 18:41:09,731 - INFO - Starting established connection to tcp://127.0.0.1:54770
+2025-04-13 19:49:57,309 - INFO - Client Client-034d79d2-18b0-11f0-a868-0ccc47e8fcbd requests to cancel 1 keys
+2025-04-13 19:49:57,347 - INFO - Scheduler cancels key eval_objective_list-b69ca45474bcdbe9dc0d373ec94157ce.  Force=False
+2025-04-13 19:49:58,530 - INFO - Retire worker addresses (stimulus_id='retire-workers-1744584598.5309484') (0,)
+2025-04-13 19:49:58,531 - INFO - Closing Nanny at 'tcp://127.0.0.1:54737'. Reason: nanny-close
+2025-04-13 19:49:58,532 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-13 19:49:58,534 - INFO - Stopping worker at tcp://127.0.0.1:54767. Reason: nanny-close
+2025-04-13 19:49:58,535 - INFO - Removing Worker plugin shuffle
+2025-04-13 19:49:58,536 - INFO - Connection to tcp://127.0.0.1:54734 has been closed.
+2025-04-13 19:49:58,537 - INFO - Received 'close-stream' from tcp://127.0.0.1:54769; closing.
+2025-04-13 19:49:58,537 - INFO - Remove worker addr: tcp://127.0.0.1:54767 name: 0 (stimulus_id='handle-worker-cleanup-1744584598.5374017')
+2025-04-13 19:49:58,538 - ERROR - Removing worker 'tcp://127.0.0.1:54767' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-0b8e6587b54ac351d119e432808c9640', 'Series-692e21e9fe1f5494f1b019aa9d3a2b62'} (stimulus_id='handle-worker-cleanup-1744584598.5374017')
+2025-04-13 19:49:58,538 - INFO - Lost all workers
+2025-04-13 19:49:59,777 - INFO - Nanny at 'tcp://127.0.0.1:54737' closed.
+2025-04-13 19:49:59,779 - INFO - Closing scheduler. Reason: unknown
+2025-04-13 19:49:59,779 - INFO - Scheduler closing all comms
+2025-04-13 19:49:59,782 - INFO - Modelo treinado com sucesso.
+2025-04-13 19:49:59,786 - INFO - Score no teste: 0.9388706796746354
+2025-04-13 19:49:59,831 - INFO - Pipeline otimizado: Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('rfe',
+                 RFE(estimator=ExtraTreesRegressor(max_features=0.1052462560505,
+                                                   min_samples_leaf=21,
+                                                   min_samples_split=6,
+                                                   n_jobs=1, random_state=42),
+                     step=0.1272800797569)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('skiptransformer',
+                                                 SkipTransformer()),
+                                                ('passthrough',
+                                                 Passthrough())])),
+                ('featureunion-2',
+                 FeatureUnion(transformer_list=[('skiptransformer',
+                                                 SkipTransformer()),
+                                                ('passthrough',
+                                                 Passthrough())])),
+                ('decisiontreeregressor',
+                 DecisionTreeRegressor(criterion='friedman_mse',
+                                       min_samples_leaf=9, min_samples_split=8,
+                                       random_state=42))])
+2025-04-13 19:49:59,844 - INFO - Modelo TPOT treinado com sucesso. Score: 0.9388706796746354
+2025-04-13 19:49:59,913 - INFO - Pipeline otimizado: Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('rfe',
+                 RFE(estimator=ExtraTreesRegressor(max_features=0.1052462560505,
+                                                   min_samples_leaf=21,
+                                                   min_samples_split=6,
+                                                   n_jobs=1, random_state=42),
+                     step=0.1272800797569)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('skiptransformer',
+                                                 SkipTransformer()),
+                                                ('passthrough',
+                                                 Passthrough())])),
+                ('featureunion-2',
+                 FeatureUnion(transformer_list=[('skiptransformer',
+                                                 SkipTransformer()),
+                                                ('passthrough',
+                                                 Passthrough())])),
+                ('decisiontreeregressor',
+                 DecisionTreeRegressor(criterion='friedman_mse',
+                                       min_samples_leaf=9, min_samples_split=8,
+                                       random_state=42))])
+2025-04-13 19:49:59,914 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-13 19:49:59,914 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-13 19:49:59,914 - INFO - Carregando os dados brutos.
+2025-04-13 19:49:59,915 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 19:50:00,684 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 19:50:00,708 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-13 19:50:00,708 - INFO - Dados carregados com sucesso. Shape dos dados: (2845, 14)
+2025-04-13 19:50:00,709 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 19:50:00,709 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 19:50:00,712 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 19:50:00,717 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-13 19:50:00,720 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 19:50:00,724 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 19:50:00,727 - INFO - Características numéricas: ['size']
+2025-04-13 19:50:00,728 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 19:50:00,728 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-13 19:50:00,850 - INFO - Pré-processamento aplicado.
+2025-04-13 19:50:00,850 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 19:50:00,851 - INFO - Pré-processamento dos dados concluído.
+2025-04-13 19:50:00,853 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (2706, 13)
+2025-04-13 19:50:00,853 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-13 19:50:00,853 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-13 19:50:00,853 - INFO - Iniciando o treinamento do modelo.
+2025-04-13 19:50:00,854 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-13 19:50:00,854 - INFO - Shape de X: (2706, 12)
+2025-04-13 19:50:00,854 - INFO - Shape de y: (2706,)
+2025-04-13 19:50:00,855 - INFO - Shape de X após o pré-processamento: (2706, 12)
+2025-04-13 19:50:00,855 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-13 19:50:00,856 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 19:50:00,857 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-13 19:50:00,857 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 19:50:00,857 - INFO - Número de valores NaN após conversão: 0
+2025-04-13 19:50:00,859 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 19:50:00,859 - INFO - Shape de X após conversão para numérico: (2706, 12)
+2025-04-13 19:50:00,859 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-13 19:50:00,860 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 19:50:00,860 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 19:50:14,636 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.9263
+2025-04-13 19:50:14,637 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-13 19:50:14,637 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 19:50:14,637 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 19:50:18,331 - INFO - Modelo: ada_boost | Melhor R² CV: 0.8606
+2025-04-13 19:50:18,333 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-13 19:50:18,333 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 19:50:18,333 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 19:50:20,539 - INFO - Modelo: xgboost | Melhor R² CV: 0.8969
+2025-04-13 19:50:20,540 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-13 19:50:20,540 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 19:50:20,541 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 19:50:35,337 - INFO - Modelo: lightgbm | Melhor R² CV: 0.7909
+2025-04-13 19:50:35,338 - INFO - 
+Modelo Selecionado: gradient_boosting com R² CV: 0.9263
+2025-04-13 19:50:35,340 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 19:50:35,345 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 19:50:35,345 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-13 19:50:35,345 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-13 19:50:35,346 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-13 19:50:35,347 - INFO - Shape de X para cálculo dos valores SHAP: (2706, 12)
+2025-04-13 19:53:54,259 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-04-13 19:53:54,260 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-13 19:53:54,260 - INFO - Análise das features concluída.
+2025-04-13 19:53:54,261 - INFO - Gerando gráfico SHAP...
+2025-04-13 19:53:54,500 - INFO - Gráfico SHAP exibido.
+2025-04-13 20:41:07,494 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 20:41:07,522 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 20:41:07,526 - INFO - Pyspark backend NOT loaded
+2025-04-13 20:41:07,526 - INFO - Python backend loaded
+2025-04-13 20:41:10,425 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 20:41:10,426 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-13 20:41:10,426 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-13 20:41:10,426 - INFO - Carregando os dados brutos.
+2025-04-13 20:41:10,427 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 20:41:11,020 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 20:41:11,041 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-13 20:41:11,041 - INFO - Dados carregados com sucesso. Shape dos dados: (2845, 14)
+2025-04-13 20:41:11,041 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 20:41:11,042 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 20:41:11,046 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 20:41:11,052 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-13 20:41:11,055 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 20:41:11,058 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 20:41:11,060 - INFO - Características numéricas: ['size']
+2025-04-13 20:41:11,060 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 20:41:11,061 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-13 20:41:11,152 - INFO - Pré-processamento aplicado.
+2025-04-13 20:41:11,153 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 20:41:11,153 - INFO - Pré-processamento dos dados concluído.
+2025-04-13 20:41:11,155 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (2706, 13)
+2025-04-13 20:41:11,156 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-13 20:41:11,156 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-13 20:41:11,156 - INFO - Iniciando o treinamento do modelo.
+2025-04-13 20:41:11,157 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-13 20:41:11,157 - INFO - Shape de X: (2706, 12)
+2025-04-13 20:41:11,157 - INFO - Shape de y: (2706,)
+2025-04-13 20:41:11,158 - INFO - Shape de X após o pré-processamento: (2706, 12)
+2025-04-13 20:41:11,158 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-13 20:41:11,159 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 20:41:11,160 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-13 20:41:11,161 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 20:41:11,161 - INFO - Número de valores NaN após conversão: 0
+2025-04-13 20:41:11,162 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 20:41:11,162 - INFO - Shape de X após conversão para numérico: (2706, 12)
+2025-04-13 20:41:11,162 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-13 20:41:11,162 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:41:11,163 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:41:24,911 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.9263
+2025-04-13 20:41:24,912 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-13 20:41:24,912 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:41:24,912 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:41:28,942 - INFO - Modelo: ada_boost | Melhor R² CV: 0.8606
+2025-04-13 20:41:28,943 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-13 20:41:28,943 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:41:28,943 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:41:31,338 - INFO - Modelo: xgboost | Melhor R² CV: 0.8969
+2025-04-13 20:41:31,339 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-13 20:41:31,339 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:41:31,339 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:41:54,753 - INFO - Modelo: lightgbm | Melhor R² CV: 0.7909
+2025-04-13 20:41:54,753 - INFO - 
+Modelo Selecionado: gradient_boosting com R² CV: 0.9263
+2025-04-13 20:41:54,760 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 20:41:54,763 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 20:41:54,763 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-13 20:41:54,763 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-13 20:41:54,763 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-13 20:41:54,765 - INFO - Shape de X para cálculo dos valores SHAP: (2706, 12)
+2025-04-13 20:45:55,111 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-04-13 20:45:55,111 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-13 20:45:55,112 - INFO - Análise das features concluída.
+2025-04-13 20:45:55,116 - INFO - Gerando gráfico SHAP...
+2025-04-13 20:45:55,468 - INFO - Gráfico SHAP exibido.
+2025-04-13 20:48:30,752 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 20:48:30,766 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 20:48:30,768 - INFO - Pyspark backend NOT loaded
+2025-04-13 20:48:30,768 - INFO - Python backend loaded
+2025-04-13 20:48:34,078 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 20:48:34,079 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-13 20:48:34,080 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-13 20:48:34,081 - INFO - Carregando os dados brutos.
+2025-04-13 20:48:34,082 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 20:48:35,012 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 20:48:35,055 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-13 20:48:35,056 - INFO - Dados carregados com sucesso. Shape dos dados: (2845, 14)
+2025-04-13 20:48:35,057 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 20:48:35,058 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 20:48:35,065 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 20:48:35,075 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-13 20:48:35,079 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 20:48:35,090 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 20:48:35,095 - INFO - Características numéricas: ['size']
+2025-04-13 20:48:35,097 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 20:48:35,098 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-13 20:48:35,386 - INFO - Pré-processamento aplicado.
+2025-04-13 20:48:35,386 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 20:48:35,387 - INFO - Pré-processamento dos dados concluído.
+2025-04-13 20:48:35,388 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (2706, 13)
+2025-04-13 20:48:35,388 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-13 20:48:35,388 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-13 20:48:35,388 - INFO - Iniciando o treinamento do modelo.
+2025-04-13 20:48:35,390 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-13 20:48:35,390 - INFO - Shape de X: (2706, 12)
+2025-04-13 20:48:35,391 - INFO - Shape de y: (2706,)
+2025-04-13 20:48:35,392 - INFO - Shape de X após o pré-processamento: (2706, 12)
+2025-04-13 20:48:35,393 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-13 20:48:35,395 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 20:48:35,396 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-13 20:48:35,397 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 20:48:35,399 - INFO - Número de valores NaN após conversão: 0
+2025-04-13 20:48:35,400 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 20:48:35,400 - INFO - Shape de X após conversão para numérico: (2706, 12)
+2025-04-13 20:48:35,401 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-13 20:48:35,401 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:48:35,401 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:48:51,003 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.9263
+2025-04-13 20:48:51,003 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-13 20:48:51,004 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:48:51,004 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:48:55,549 - INFO - Modelo: ada_boost | Melhor R² CV: 0.8606
+2025-04-13 20:48:55,549 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-13 20:48:55,549 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:48:55,549 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:48:57,935 - INFO - Modelo: xgboost | Melhor R² CV: 0.8969
+2025-04-13 20:48:57,936 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-13 20:48:57,936 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:48:57,936 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:49:23,532 - INFO - Modelo: lightgbm | Melhor R² CV: 0.7909
+2025-04-13 20:49:23,533 - INFO - 
+Modelo Selecionado: gradient_boosting com R² CV: 0.9263
+2025-04-13 20:49:23,545 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 20:49:23,549 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 20:49:23,550 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-13 20:49:23,550 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-13 20:49:23,550 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-13 20:49:23,551 - INFO - Shape de X para cálculo dos valores SHAP: (2706, 12)
+2025-04-13 20:53:33,399 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-04-13 20:53:33,399 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-13 20:53:33,400 - INFO - Análise das features concluída.
+2025-04-13 20:53:33,403 - INFO - Gerando gráfico SHAP...
+2025-04-13 20:53:33,592 - INFO - Gráfico SHAP exibido.
+2025-04-13 20:57:59,195 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 20:57:59,212 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 20:57:59,212 - INFO - Pyspark backend NOT loaded
+2025-04-13 20:57:59,212 - INFO - Python backend loaded
+2025-04-13 20:58:02,656 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 20:58:40,978 - INFO - Pandas backend loaded 2.2.3
+2025-04-13 20:58:40,987 - INFO - Numpy backend loaded 1.26.4
+2025-04-13 20:58:40,988 - INFO - Pyspark backend NOT loaded
+2025-04-13 20:58:40,988 - INFO - Python backend loaded
+2025-04-13 20:58:43,645 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-13 20:58:43,645 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-13 20:58:43,645 - INFO - Iniciando o pipeline com o arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv e a variável alvo: price
+2025-04-13 20:58:43,646 - INFO - Carregando os dados brutos.
+2025-04-13 20:58:43,646 - INFO - Iniciando o carregamento dos dados do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 20:58:45,028 - INFO - Dados carregados com sucesso do arquivo: C:\Users\MatheusBenatti/Desktop/ProjetoLuxuryWatches/models/dataset\Watches.csv
+2025-04-13 20:58:45,098 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-13 20:58:45,099 - INFO - Dados carregados com sucesso. Shape dos dados: (2845, 14)
+2025-04-13 20:58:45,099 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 20:58:45,099 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-13 20:58:45,107 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-13 20:58:45,124 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-13 20:58:45,156 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-13 20:58:45,168 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-13 20:58:45,172 - INFO - Características numéricas: ['size']
+2025-04-13 20:58:45,175 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 20:58:45,180 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-13 20:58:45,398 - INFO - Pré-processamento aplicado.
+2025-04-13 20:58:45,399 - INFO - Pré-processado convertido para DataFrame.
+2025-04-13 20:58:45,400 - INFO - Pré-processamento dos dados concluído.
+2025-04-13 20:58:45,401 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (2706, 13)
+2025-04-13 20:58:45,401 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-13 20:58:45,402 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-13 20:58:45,402 - INFO - Iniciando o treinamento do modelo.
+2025-04-13 20:58:45,403 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-13 20:58:45,404 - INFO - Shape de X: (2706, 12)
+2025-04-13 20:58:45,404 - INFO - Shape de y: (2706,)
+2025-04-13 20:58:45,406 - INFO - Shape de X após o pré-processamento: (2706, 12)
+2025-04-13 20:58:45,406 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-13 20:58:45,410 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 20:58:45,414 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-13 20:58:45,415 - INFO - 0    4.101656e-02
+1   -5.225941e-01
+2   -4.449661e-16
+3    4.793804e-01
+4   -2.094771e-01
+Name: size, dtype: float64
+2025-04-13 20:58:45,416 - INFO - Número de valores NaN após conversão: 0
+2025-04-13 20:58:45,417 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-13 20:58:45,417 - INFO - Shape de X após conversão para numérico: (2706, 12)
+2025-04-13 20:58:45,418 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-13 20:58:45,418 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:58:45,421 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:59:18,615 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.9263
+2025-04-13 20:59:18,616 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-13 20:59:18,616 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:59:18,617 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:59:31,833 - INFO - Modelo: ada_boost | Melhor R² CV: 0.8606
+2025-04-13 20:59:31,833 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-13 20:59:31,834 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:59:31,834 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 20:59:40,020 - INFO - Modelo: xgboost | Melhor R² CV: 0.8969
+2025-04-13 20:59:40,021 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-13 20:59:40,021 - INFO - Shape de X antes do treinamento: (2706, 12)
+2025-04-13 20:59:40,022 - INFO - Shape de y antes do treinamento: (2706,)
+2025-04-13 21:00:00,281 - INFO - Modelo: lightgbm | Melhor R² CV: 0.7909
+2025-04-13 21:00:00,282 - INFO - 
+Modelo Selecionado: gradient_boosting com R² CV: 0.9263
+2025-04-13 21:00:00,288 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 21:00:00,292 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=5, n_estimators=50,
+                                           random_state=123))])
+2025-04-13 21:00:00,292 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-13 21:00:00,293 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-13 21:00:00,293 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-13 21:00:00,294 - INFO - Shape de X para cálculo dos valores SHAP: (2706, 12)
+2025-04-13 21:04:04,056 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-04-13 21:04:04,057 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-13 21:04:04,057 - INFO - Análise das features concluída.
+2025-04-13 21:04:04,059 - INFO - Gerando gráfico SHAP...
+2025-04-13 21:04:04,170 - INFO - Gráfico SHAP exibido.
