@@ -2078,3 +2078,66 @@ Modelo Selecionado: gradient_boosting com R² CV: 0.9263
 2025-04-13 21:04:04,057 - INFO - Análise das features concluída.
 2025-04-13 21:04:04,059 - INFO - Gerando gráfico SHAP...
 2025-04-13 21:04:04,170 - INFO - Gráfico SHAP exibido.
+2025-04-19 05:31:57,912 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 05:31:57,927 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 05:31:57,928 - INFO - Pyspark backend NOT loaded
+2025-04-19 05:31:57,928 - INFO - Python backend loaded
+2025-04-19 05:32:11,300 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-19 05:32:11,300 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-19 05:32:11,300 - INFO - Iniciando o pipeline com o arquivo: models/dataset\Watches.csv e a variável alvo: price
+2025-04-19 05:32:11,300 - INFO - Carregando os dados brutos.
+2025-04-19 05:32:11,300 - INFO - Iniciando o carregamento dos dados do arquivo: models/dataset\Watches.csv
+2025-04-19 05:32:11,998 - INFO - Dados carregados com sucesso do arquivo: models/dataset\Watches.csv
+2025-04-19 05:32:12,022 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-19 05:32:12,022 - INFO - Dados carregados com sucesso. Shape dos dados: (28449, 14)
+2025-04-19 05:32:12,022 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 05:32:12,022 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 05:32:12,036 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 05:32:12,052 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 05:32:12,061 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 05:32:12,074 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 05:32:12,080 - INFO - Características numéricas: ['size']
+2025-04-19 05:32:12,080 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 05:32:12,080 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 05:32:12,313 - INFO - Pré-processamento aplicado.
+2025-04-19 05:32:12,313 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 05:32:12,315 - INFO - Pré-processamento dos dados concluído.
+2025-04-19 05:32:12,316 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (26973, 13)
+2025-04-19 05:32:12,316 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-19 05:32:12,316 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-19 05:32:12,316 - INFO - Iniciando o treinamento do modelo.
+2025-04-19 05:32:12,318 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-19 05:32:12,318 - INFO - Shape de X: (26973, 12)
+2025-04-19 05:32:12,319 - INFO - Shape de y: (26973,)
+2025-04-19 05:32:12,320 - INFO - Shape de X após o pré-processamento: (26973, 12)
+2025-04-19 05:32:12,320 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-19 05:32:12,321 - INFO - 0    0.029573
+1   -0.281770
+2    0.000000
+3    0.271728
+4   -0.108802
+Name: size, dtype: float64
+2025-04-19 05:32:12,321 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-19 05:32:12,322 - INFO - 0    0.029573
+1   -0.281770
+2    0.000000
+3    0.271728
+4   -0.108802
+Name: size, dtype: float64
+2025-04-19 05:32:12,322 - INFO - Número de valores NaN após conversão: 0
+2025-04-19 05:32:12,324 - INFO - Colunas numéricas após conversão: ['size', 'name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 05:32:12,325 - INFO - Shape de X após conversão para numérico: (26973, 12)
+2025-04-19 05:32:12,325 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-19 05:32:12,326 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-19 05:32:12,326 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-19 05:32:48,596 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 05:32:48,604 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 05:32:48,605 - INFO - Pyspark backend NOT loaded
+2025-04-19 05:32:48,606 - INFO - Python backend loaded
+2025-04-19 05:32:52,408 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-19 05:32:52,408 - INFO - Iniciando autenticação no Kaggle.
+2025-04-19 05:32:52,408 - INFO - Autenticação bem-sucedida!
+2025-04-19 05:32:52,408 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-19 05:32:56,076 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em models/dataset
+2025-04-19 05:32:56,076 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-19 05:32:56,709 - INFO - Dataset carregado com sucesso: models/dataset\Watches.csv

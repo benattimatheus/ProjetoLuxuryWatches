@@ -29,7 +29,7 @@ from application.use_cases import MLUseCases
 
 # Caminhos padrão
 credentials_path = os.path.expanduser("~/.kaggle/kaggle.json")
-download_path = os.path.expanduser("~/Desktop/ProjetoLuxuryWatches/models/dataset")
+download_path = os.path.expanduser("models/dataset")
 dataset_name = "philmorekoung11/luxury-watch-listings"
 dataset_path = os.path.join(download_path, "Watches.csv")
 
@@ -109,8 +109,8 @@ def main():
 
     else:
         logger.info("Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...")
-        # run_download()
-        # generate_eda_reports(dataset_path)
+        run_download()
+        generate_eda_reports(dataset_path)
         target = "price"
 
         #run_tpot_training(dataset_path, target)
