@@ -108,18 +108,5 @@ class PyCaretAdapter(TrainingPort):
             except Exception as e:
                 logger.error(f"Erro ao salvar métricas: {e}")
 
-            # SHAP
-            try:
-                logger.info("Gerando gráfico SHAP...")
-                explainer = shap.Explainer(model)
-                shap_values = explainer(df.drop(columns=[target]))
-                shap.summary_plot(shap_values, df.drop(columns=[target]), show=False)
-                shap_path = f"views/{task_type}_shap_summary.png"
-                plt.savefig(shap_path)
-                plt.clf()
-                logger.info(f"Gráfico SHAP salvo em {shap_path}")
-            except Exception as e:
-                logger.error(f"Erro ao gerar gráfico SHAP: {e}")
-
         print(f"Best {task_type.capitalize()} Model:", model)
         return model

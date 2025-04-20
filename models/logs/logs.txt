@@ -2650,3 +2650,183 @@ Name: size, dtype: float64
 2025-04-20 00:30:54,832 - INFO - Nanny at 'tcp://127.0.0.1:52651' closed.
 2025-04-20 00:30:54,832 - INFO - Closing scheduler. Reason: unknown
 2025-04-20 00:30:54,833 - INFO - Scheduler closing all comms
+2025-04-20 00:43:11,777 - INFO - Pandas backend loaded 2.2.3
+2025-04-20 00:43:11,785 - INFO - Numpy backend loaded 1.26.4
+2025-04-20 00:43:11,786 - INFO - Pyspark backend NOT loaded
+2025-04-20 00:43:11,786 - INFO - Python backend loaded
+2025-04-20 00:43:15,342 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-20 00:43:15,342 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-20 00:43:15,342 - INFO - Iniciando o pipeline com o arquivo: models/dataset\Watches.csv e a variável alvo: price
+2025-04-20 00:43:15,342 - INFO - Carregando os dados brutos.
+2025-04-20 00:43:15,342 - INFO - Iniciando o carregamento dos dados do arquivo: models/dataset\Watches.csv
+2025-04-20 00:43:15,740 - INFO - Dados carregados com sucesso do arquivo: models/dataset\Watches.csv
+2025-04-20 00:43:15,762 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-20 00:43:15,762 - INFO - Dados carregados com sucesso. Shape dos dados: (28449, 14)
+2025-04-20 00:43:15,762 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-20 00:43:15,762 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-20 00:43:15,783 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-20 00:43:15,805 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-20 00:43:15,874 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-20 00:43:15,886 - INFO - Coluna 'size' convertida para numérico.
+2025-04-20 00:43:15,904 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-20 00:43:15,921 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-20 00:43:15,921 - INFO - Shape após limpeza inicial: (26973, 13)
+2025-04-20 00:43:15,927 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-20 00:43:15,927 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-20 00:43:15,927 - INFO - Nº de amostras: 26973
+2025-04-20 00:43:15,927 - INFO - Aplicando pré-processador...
+2025-04-20 00:43:16,062 - INFO - Coluna yop - valores únicos: 121
+2025-04-20 00:43:16,062 - INFO - Coluna size - valores únicos: 246
+2025-04-20 00:43:16,063 - INFO - Coluna watch_age - valores únicos: 121
+2025-04-20 00:43:16,063 - INFO - Coluna has_gold - valores únicos: 2
+2025-04-20 00:43:16,064 - INFO - Coluna brand - valores únicos: 21
+2025-04-20 00:43:16,064 - INFO - Coluna model - valores únicos: 31
+2025-04-20 00:43:16,065 - INFO - Coluna mvmt - valores únicos: 3
+2025-04-20 00:43:16,065 - INFO - Coluna casem - valores únicos: 13
+2025-04-20 00:43:16,066 - INFO - Coluna bracem - valores únicos: 17
+2025-04-20 00:43:16,066 - INFO - Coluna cond - valores únicos: 7
+2025-04-20 00:43:16,067 - INFO - Coluna sex - valores únicos: 2
+2025-04-20 00:43:16,067 - INFO - Coluna condition - valores únicos: 6
+2025-04-20 00:43:16,067 - INFO - Shape final de X: (26973, 12)
+2025-04-20 00:43:16,067 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-20 00:43:16,068 - INFO - Pré-processamento dos dados concluído.
+2025-04-20 00:43:16,070 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (26973, 13)
+2025-04-20 00:43:16,070 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-20 00:43:16,070 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-20 00:43:16,070 - INFO - Iniciando o treinamento do modelo.
+2025-04-20 00:43:16,071 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-20 00:43:16,071 - INFO - Shape de X: (26973, 12)
+2025-04-20 00:43:16,071 - INFO - Shape de y: (26973,)
+2025-04-20 00:43:16,073 - INFO - Shape de X após o pré-processamento: (26973, 12)
+2025-04-20 00:43:16,073 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-20 00:43:16,074 - INFO - 0    0.000000
+1   -2.000000
+2    0.000000
+3    1.555556
+4   -0.888889
+Name: size, dtype: float64
+2025-04-20 00:43:16,075 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-20 00:43:16,076 - INFO - 0    0.000000
+1   -2.000000
+2    0.000000
+3    1.555556
+4   -0.888889
+Name: size, dtype: float64
+2025-04-20 00:43:16,077 - INFO - Número de valores NaN após conversão: 0
+2025-04-20 00:43:16,080 - INFO - Colunas numéricas após conversão: ['yop', 'size', 'watch_age', 'has_gold', 'brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-20 00:43:16,081 - INFO - Shape de X após conversão para numérico: (26973, 12)
+2025-04-20 00:43:16,081 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-20 00:43:16,082 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:43:16,082 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:43:53,976 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.8387
+2025-04-20 00:43:53,977 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-20 00:43:53,977 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:43:53,977 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:44:07,517 - INFO - Modelo: ada_boost | Melhor R² CV: 0.7143
+2025-04-20 00:44:07,518 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-20 00:44:07,518 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:44:07,518 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:44:11,977 - INFO - Modelo: xgboost | Melhor R² CV: 0.8386
+2025-04-20 00:44:11,978 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-20 00:44:11,978 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:44:11,979 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:49:58,352 - INFO - Pandas backend loaded 2.2.3
+2025-04-20 00:49:58,359 - INFO - Numpy backend loaded 1.26.4
+2025-04-20 00:49:58,360 - INFO - Pyspark backend NOT loaded
+2025-04-20 00:49:58,360 - INFO - Python backend loaded
+2025-04-20 00:50:01,815 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-20 00:50:01,815 - INFO - Executando análise com SHAP (pipeline separado de TPOT)...
+2025-04-20 00:50:01,815 - INFO - Iniciando o pipeline com o arquivo: models/dataset\Watches.csv e a variável alvo: price
+2025-04-20 00:50:01,815 - INFO - Carregando os dados brutos.
+2025-04-20 00:50:01,815 - INFO - Iniciando o carregamento dos dados do arquivo: models/dataset\Watches.csv
+2025-04-20 00:50:02,491 - INFO - Dados carregados com sucesso do arquivo: models/dataset\Watches.csv
+2025-04-20 00:50:02,526 - INFO - Amostra de 10% dos dados selecionada.
+2025-04-20 00:50:02,526 - INFO - Dados carregados com sucesso. Shape dos dados: (28449, 14)
+2025-04-20 00:50:02,526 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-20 00:50:02,526 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-20 00:50:02,553 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-20 00:50:02,589 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-20 00:50:02,762 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-20 00:50:02,780 - INFO - Coluna 'size' convertida para numérico.
+2025-04-20 00:50:02,812 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-20 00:50:02,868 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-20 00:50:02,868 - INFO - Shape após limpeza inicial: (26973, 13)
+2025-04-20 00:50:02,877 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-20 00:50:02,877 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-20 00:50:02,877 - INFO - Nº de amostras: 26973
+2025-04-20 00:50:02,877 - INFO - Aplicando pré-processador...
+2025-04-20 00:50:03,129 - INFO - Coluna yop - valores únicos: 121
+2025-04-20 00:50:03,130 - INFO - Coluna size - valores únicos: 246
+2025-04-20 00:50:03,131 - INFO - Coluna watch_age - valores únicos: 121
+2025-04-20 00:50:03,131 - INFO - Coluna has_gold - valores únicos: 2
+2025-04-20 00:50:03,132 - INFO - Coluna brand - valores únicos: 21
+2025-04-20 00:50:03,132 - INFO - Coluna model - valores únicos: 31
+2025-04-20 00:50:03,133 - INFO - Coluna mvmt - valores únicos: 3
+2025-04-20 00:50:03,133 - INFO - Coluna casem - valores únicos: 13
+2025-04-20 00:50:03,133 - INFO - Coluna bracem - valores únicos: 17
+2025-04-20 00:50:03,134 - INFO - Coluna cond - valores únicos: 7
+2025-04-20 00:50:03,134 - INFO - Coluna sex - valores únicos: 2
+2025-04-20 00:50:03,135 - INFO - Coluna condition - valores únicos: 6
+2025-04-20 00:50:03,135 - INFO - Shape final de X: (26973, 12)
+2025-04-20 00:50:03,135 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-20 00:50:03,137 - INFO - Pré-processamento dos dados concluído.
+2025-04-20 00:50:03,139 - INFO - Novo DataFrame de dados pré-processados criado com sucesso. Shape: (26973, 13)
+2025-04-20 00:50:03,139 - INFO - Iniciando a construção e treinamento do modelo.
+2025-04-20 00:50:03,140 - INFO - Iniciando a construção do modelo para a variável alvo 'price'.
+2025-04-20 00:50:03,140 - INFO - Iniciando o treinamento do modelo.
+2025-04-20 00:50:03,142 - INFO - Coluna alvo é numérica. Nenhuma codificação necessária.
+2025-04-20 00:50:03,143 - INFO - Shape de X: (26973, 12)
+2025-04-20 00:50:03,143 - INFO - Shape de y: (26973,)
+2025-04-20 00:50:03,143 - INFO - Shape de X após o pré-processamento: (26973, 12)
+2025-04-20 00:50:03,144 - INFO - Primeiros 5 valores da coluna 'size' antes da conversão:
+2025-04-20 00:50:03,144 - INFO - 0    0.000000
+1   -2.000000
+2    0.000000
+3    1.555556
+4   -0.888889
+Name: size, dtype: float64
+2025-04-20 00:50:03,145 - INFO - Primeiros 5 valores da coluna 'size' após conversão:
+2025-04-20 00:50:03,146 - INFO - 0    0.000000
+1   -2.000000
+2    0.000000
+3    1.555556
+4   -0.888889
+Name: size, dtype: float64
+2025-04-20 00:50:03,147 - INFO - Número de valores NaN após conversão: 0
+2025-04-20 00:50:03,150 - INFO - Colunas numéricas após conversão: ['yop', 'size', 'watch_age', 'has_gold', 'brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-20 00:50:03,151 - INFO - Shape de X após conversão para numérico: (26973, 12)
+2025-04-20 00:50:03,151 - INFO - Iniciando treinamento do modelo: gradient_boosting
+2025-04-20 00:50:03,151 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:50:03,151 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:50:45,101 - INFO - Modelo: gradient_boosting | Melhor R² CV: 0.8387
+2025-04-20 00:50:45,101 - INFO - Iniciando treinamento do modelo: ada_boost
+2025-04-20 00:50:45,102 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:50:45,102 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:50:58,242 - INFO - Modelo: ada_boost | Melhor R² CV: 0.7143
+2025-04-20 00:50:58,242 - INFO - Iniciando treinamento do modelo: xgboost
+2025-04-20 00:50:58,242 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:50:58,243 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:51:02,229 - INFO - Modelo: xgboost | Melhor R² CV: 0.8386
+2025-04-20 00:51:02,229 - INFO - Iniciando treinamento do modelo: lightgbm
+2025-04-20 00:51:02,230 - INFO - Shape de X antes do treinamento: (26973, 12)
+2025-04-20 00:51:02,230 - INFO - Shape de y antes do treinamento: (26973,)
+2025-04-20 00:51:14,930 - INFO - Modelo: lightgbm | Melhor R² CV: 0.8380
+2025-04-20 00:51:14,930 - INFO - 
+Modelo Selecionado: gradient_boosting com R² CV: 0.8387
+2025-04-20 00:51:14,935 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=7, n_estimators=200,
+                                           random_state=123))])
+2025-04-20 00:51:14,937 - INFO - Modelo treinado com sucesso: Pipeline(steps=[('scaler', StandardScaler()),
+                ('regressor',
+                 GradientBoostingRegressor(max_depth=7, n_estimators=200,
+                                           random_state=123))])
+2025-04-20 00:51:14,938 - INFO - Iniciando a análise das features com o modelo treinado.
+2025-04-20 00:51:14,938 - INFO - Iniciando a análise das features para o modelo com a variável alvo 'price'.
+2025-04-20 00:51:14,938 - INFO - Iniciando o cálculo dos valores SHAP para o modelo com a variável alvo 'price'.
+2025-04-20 00:51:14,940 - INFO - Shape de X para cálculo dos valores SHAP: (26973, 12)
+2025-04-20 01:41:41,726 - INFO - Cálculo dos valores SHAP concluído com sucesso.
+2025-04-20 01:41:41,726 - INFO - Análise SHAP concluída para o modelo com a variável alvo 'price'.
+2025-04-20 01:41:41,727 - INFO - Análise das features concluída.
+2025-04-20 01:41:41,727 - INFO - Gerando gráfico SHAP...
+2025-04-20 01:41:44,633 - INFO - Gráfico SHAP salvo em: C:\Users\MatheusBenatti\Desktop\ProjetoLuxuryWatches\shap_summary.png

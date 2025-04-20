@@ -4,6 +4,8 @@ import argparse
 import logging
 import shap
 import matplotlib
+import matplotlib.pyplot as plt
+import pandas as pd
 matplotlib.use("TkAgg")
 
 import matplotlib.pyplot as plt
@@ -58,15 +60,30 @@ def generate_eda_reports(dataset_path):
     eda.generate_ydata()
     logger.info("Relatórios de EDA gerados com sucesso.")
 
-def run_shap_analysis(file_path, target_col):
+def run_shap_analysis(file_path, target_col, save_path="shap_summary.png"):
     logger.info("Executando análise com SHAP (pipeline separado de TPOT)...")
     model, shap_summary = run_pipeline(file_path, target_col)
 
     if shap_summary is not None:
         logger.info("Gerando gráfico SHAP...")
-        shap.summary_plot(shap_summary.values, shap_summary.data)
-        plt.show()
-        logger.info("Gráfico SHAP exibido.")
+
+        # Abre figura com tamanho ideal
+        plt.figure(figsize=(10, 6))
+
+        # Garante que os dados são compatíveis
+        shap.summary_plot(
+            shap_summary.values,
+            pd.DataFrame(shap_summary.data, columns=shap_summary.feature_names),
+            show=False  # evita exibição automática
+        )
+
+        # Salva o gráfico
+        plt.tight_layout()
+        plt.savefig(save_path, dpi=300)
+        plt.close()
+
+        logger.info(f"Gráfico SHAP salvo em: {os.path.abspath(save_path)}")
+
     else:
         logger.warning("SHAP summary retornou None. Gráfico não foi gerado.")
 
