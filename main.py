@@ -113,7 +113,7 @@ def main():
         generate_eda_reports(dataset_path)
         target = "price"
 
-        #run_tpot_training(dataset_path, target)
+        run_tpot_training(dataset_path, target)
         run_shap_analysis(dataset_path, target)
 
 if __name__ == "__main__":

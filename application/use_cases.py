@@ -32,10 +32,19 @@ class MLUseCases:
         raw_df = pd.read_csv(full_path)
 
         logger.info("Iniciando pré-processamento dos dados.")
-        X, y, preprocessor = preprocess_data(raw_df, target_col)
-
+        X_preprocessed_df, y, _ = preprocess_data(raw_df, target_col)
+        df_preprocessed = pd.concat([X_preprocessed_df, y.reset_index(drop=True)], axis=1)
+        
         logger.info("Iniciando treinamento com PyCaret.")
-        model = self.training_adapter.train_model(X, y, task_type)
+        model = self.training_adapter.train_model(df_preprocessed, target_col, task_type)
 
         logger.info("Treinamento finalizado.")
         print(f"Treinamento concluído. Modelo: {model}")
+        logger.info("Amostras antes:", raw_df.shape)
+        print("Amostras antes:", raw_df.shape)
+        logger.info("Amostras depois:", X_preprocessed_df.shape)
+        print("Amostras depois:", X_preprocessed_df.shape)
+        logger.info("Features:", X_preprocessed_df.columns.tolist())
+        print("Features:", X_preprocessed_df.columns.tolist())
+        logger.info("Alguma feature constante?", X_preprocessed_df.nunique())
+        print("Alguma feature constante?", X_preprocessed_df.nunique())

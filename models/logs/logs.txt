@@ -2141,3 +2141,512 @@ Name: size, dtype: float64
 2025-04-19 05:32:56,076 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em models/dataset
 2025-04-19 05:32:56,076 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
 2025-04-19 05:32:56,709 - INFO - Dataset carregado com sucesso: models/dataset\Watches.csv
+2025-04-19 22:15:15,273 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:15:15,281 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:15:15,282 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:15:15,282 - INFO - Python backend loaded
+2025-04-19 22:15:43,765 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:15:43,772 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:15:43,773 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:15:43,773 - INFO - Python backend loaded
+2025-04-19 22:16:14,767 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:16:14,774 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:16:14,774 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:16:14,774 - INFO - Python backend loaded
+2025-04-19 22:16:18,038 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:16:18,038 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:16:18,713 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:16:18,713 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:16:18,815 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:16:18,921 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:16:18,957 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:16:19,065 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:16:19,110 - INFO - Características numéricas: ['size']
+2025-04-19 22:16:19,110 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:16:19,110 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:16:20,711 - INFO - Pré-processamento aplicado.
+2025-04-19 22:16:20,712 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:16:20,722 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:16:20,723 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:17:00,043 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:17:00,050 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:17:00,050 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:17:00,050 - INFO - Python backend loaded
+2025-04-19 22:17:03,417 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=regression, tipo=price
+2025-04-19 22:17:03,417 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:17:03,817 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:17:03,817 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:17:03,923 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:17:17,254 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:17:17,262 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:17:17,262 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:17:17,263 - INFO - Python backend loaded
+2025-04-19 22:17:20,572 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:17:20,572 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:17:20,973 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:17:20,973 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:17:21,078 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:17:21,185 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:17:21,221 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:17:21,326 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:17:21,374 - INFO - Características numéricas: ['size']
+2025-04-19 22:17:21,374 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:17:21,374 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:17:23,023 - INFO - Pré-processamento aplicado.
+2025-04-19 22:17:23,024 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:17:23,038 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:17:23,038 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:19:28,327 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:19:28,335 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:19:28,335 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:19:28,335 - INFO - Python backend loaded
+2025-04-19 22:19:31,807 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:19:31,807 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:19:32,212 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:19:32,212 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:19:32,319 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:19:32,429 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:19:32,464 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:19:32,573 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:19:32,619 - INFO - Características numéricas: ['size']
+2025-04-19 22:19:32,619 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:19:32,619 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:19:34,254 - INFO - Pré-processamento aplicado.
+2025-04-19 22:19:34,254 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:19:34,266 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:19:34,266 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:20:24,052 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:20:24,060 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:20:24,060 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:20:24,061 - INFO - Python backend loaded
+2025-04-19 22:20:27,385 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:20:27,385 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:20:28,105 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:20:28,105 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:20:28,211 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:20:28,313 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:20:28,346 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:20:28,455 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:20:28,500 - INFO - Características numéricas: ['size']
+2025-04-19 22:20:28,501 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:20:28,501 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:20:30,127 - INFO - Pré-processamento aplicado.
+2025-04-19 22:20:30,128 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:20:30,139 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:20:30,139 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:22:16,084 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:22:16,091 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:22:16,092 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:22:16,092 - INFO - Python backend loaded
+2025-04-19 22:22:19,300 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:22:19,300 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:22:19,703 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:22:19,703 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:22:19,805 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:22:19,912 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:22:19,948 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:22:20,053 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:22:20,100 - INFO - Características numéricas: ['size']
+2025-04-19 22:22:20,101 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:22:20,101 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:22:21,692 - INFO - Pré-processamento aplicado.
+2025-04-19 22:22:21,692 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:22:21,704 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:22:21,705 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:39:45,724 - INFO - Modelo de regressão treinado com sucesso.
+2025-04-19 22:39:45,725 - INFO - Gerando gráfico do modelo...
+2025-04-19 22:39:47,229 - ERROR - Erro ao salvar gráfico do modelo: [Errno 2] No such file or directory: 'outputs/regression_model_plot.png'
+2025-04-19 22:39:47,230 - INFO - Treinamento finalizado.
+2025-04-19 22:54:17,727 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:54:17,738 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:54:17,739 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:54:17,739 - INFO - Python backend loaded
+2025-04-19 22:54:21,639 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:54:21,639 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:54:22,025 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:54:22,026 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:54:22,127 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:54:22,231 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:54:22,269 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:54:22,381 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:54:22,624 - INFO - Características numéricas: ['size']
+2025-04-19 22:54:22,624 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:55:22,917 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:55:22,925 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:55:22,925 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:55:22,925 - INFO - Python backend loaded
+2025-04-19 22:55:26,153 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:55:26,154 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:55:26,550 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:55:26,551 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:55:26,658 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:55:26,760 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:55:26,798 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:55:26,903 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:55:27,113 - INFO - Características numéricas: ['size']
+2025-04-19 22:55:27,114 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:57:35,083 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:57:35,089 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:57:35,090 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:57:35,090 - INFO - Python backend loaded
+2025-04-19 22:57:38,338 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:57:38,338 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:57:38,739 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:57:38,739 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:57:38,843 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:57:38,949 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:57:38,991 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:57:39,096 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:57:39,304 - INFO - Características numéricas: ['size']
+2025-04-19 22:57:39,305 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:57:39,305 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:58:17,637 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:58:17,645 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:58:17,646 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:58:17,646 - INFO - Python backend loaded
+2025-04-19 22:58:20,832 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:58:20,832 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:58:21,245 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:58:21,245 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:58:21,352 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:58:21,453 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:58:21,488 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:58:21,592 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:58:21,804 - INFO - Características numéricas: ['size']
+2025-04-19 22:58:21,804 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:58:21,804 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:58:23,398 - INFO - Pré-processamento aplicado.
+2025-04-19 22:58:23,398 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:58:23,410 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:58:23,410 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:58:38,491 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:58:38,498 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:58:38,498 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:58:38,498 - INFO - Python backend loaded
+2025-04-19 22:58:41,863 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:58:41,864 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:58:42,268 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:58:42,269 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:58:42,373 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:58:42,483 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:58:42,517 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:58:42,619 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:58:42,834 - INFO - Características numéricas: ['size']
+2025-04-19 22:58:42,836 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:58:42,836 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:58:44,463 - INFO - Pré-processamento aplicado.
+2025-04-19 22:58:44,463 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:58:44,476 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:58:44,476 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 22:58:55,103 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 22:58:55,110 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 22:58:55,111 - INFO - Pyspark backend NOT loaded
+2025-04-19 22:58:55,111 - INFO - Python backend loaded
+2025-04-19 22:58:58,399 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 22:58:58,400 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 22:58:58,804 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 22:58:58,804 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 22:58:58,911 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 22:58:59,018 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 22:58:59,055 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 22:58:59,162 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 22:58:59,372 - INFO - Características numéricas: ['size']
+2025-04-19 22:58:59,372 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 22:58:59,372 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 22:59:00,990 - INFO - Pré-processamento aplicado.
+2025-04-19 22:59:00,991 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 22:59:01,003 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 22:59:01,004 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 23:04:26,304 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:04:26,314 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:04:26,314 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:04:26,315 - INFO - Python backend loaded
+2025-04-19 23:04:30,249 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:04:30,249 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:04:30,632 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:04:30,633 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:04:30,735 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 23:04:30,783 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:04:30,819 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 23:04:30,923 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 23:04:31,140 - INFO - Características numéricas: ['size']
+2025-04-19 23:04:31,141 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 23:04:31,141 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 23:06:36,573 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:06:36,581 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:06:36,581 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:06:36,582 - INFO - Python backend loaded
+2025-04-19 23:06:39,822 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:06:39,822 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:06:40,222 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:06:40,223 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:06:40,328 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 23:06:40,431 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:06:40,466 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 23:06:40,570 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 23:06:40,786 - INFO - Características numéricas: ['size']
+2025-04-19 23:06:40,787 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 23:06:40,787 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 23:06:42,374 - INFO - Pré-processamento aplicado.
+2025-04-19 23:06:42,374 - INFO - Pré-processado convertido para DataFrame.
+2025-04-19 23:06:42,387 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 23:06:42,387 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 23:08:52,734 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:08:52,745 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:08:52,746 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:08:52,746 - INFO - Python backend loaded
+2025-04-19 23:08:56,482 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:08:56,483 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:08:56,862 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:08:56,863 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:08:56,963 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 23:08:57,004 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 23:08:57,114 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 23:08:57,328 - INFO - Características numéricas: ['size']
+2025-04-19 23:08:57,329 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 23:08:57,329 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 23:11:05,063 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:11:05,071 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:11:05,071 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:11:05,071 - INFO - Python backend loaded
+2025-04-19 23:11:08,490 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:11:08,491 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:11:08,880 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:11:08,880 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:11:08,984 - INFO - Ajustes feitos na coluna 'price'. Valores de preço convertidos.
+2025-04-19 23:11:09,101 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:11:09,140 - INFO - 'Unnamed: 0' removida das colunas.
+2025-04-19 23:11:09,260 - INFO - Coluna 'size' processada e convertida para valores numéricos.
+2025-04-19 23:11:09,525 - INFO - Características numéricas: ['size']
+2025-04-19 23:11:09,526 - INFO - Características categóricas: ['name', 'brand', 'model', 'ref', 'mvmt', 'casem', 'bracem', 'yop', 'cond', 'sex', 'condition']
+2025-04-19 23:11:09,526 - INFO - Preprocessor com TargetEncoder montado com sucesso.
+2025-04-19 23:18:06,507 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:18:06,513 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:18:06,514 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:18:06,514 - INFO - Python backend loaded
+2025-04-19 23:18:10,198 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:18:10,198 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:18:10,592 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:18:10,592 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:18:10,737 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:19:35,377 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:19:35,386 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:19:35,386 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:19:35,386 - INFO - Python backend loaded
+2025-04-19 23:19:38,849 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:19:38,849 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:19:39,228 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:19:39,228 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:19:39,371 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:19:39,699 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-19 23:19:40,327 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-19 23:19:40,430 - INFO - Coluna 'size' convertida para numérico.
+2025-04-19 23:19:40,594 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-19 23:19:40,763 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-19 23:19:40,809 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-19 23:19:40,810 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-19 23:19:40,810 - INFO - Pré-processador montado. Aplicando ao dataset...
+2025-04-19 23:19:41,871 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-19 23:19:41,880 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 23:19:41,882 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 23:24:41,336 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:24:41,345 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:24:41,345 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:24:41,345 - INFO - Python backend loaded
+2025-04-19 23:24:44,989 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:24:44,989 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:24:45,370 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:24:45,370 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:24:45,515 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:24:45,830 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-19 23:24:46,499 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-19 23:24:46,604 - INFO - Coluna 'size' convertida para numérico.
+2025-04-19 23:24:46,762 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-19 23:24:46,927 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-19 23:24:46,971 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-19 23:24:46,971 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-19 23:24:46,971 - INFO - Pré-processador montado. Aplicando ao dataset...
+2025-04-19 23:24:48,063 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-19 23:24:48,073 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 23:24:48,073 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 23:25:16,367 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:25:16,374 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:25:16,375 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:25:16,375 - INFO - Python backend loaded
+2025-04-19 23:25:19,562 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:25:19,562 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:25:19,954 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:25:19,954 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:25:20,102 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:25:20,423 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-19 23:25:21,065 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-19 23:25:21,175 - INFO - Coluna 'size' convertida para numérico.
+2025-04-19 23:25:21,339 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-19 23:25:21,508 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-19 23:25:21,557 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-19 23:25:21,558 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-19 23:25:21,558 - INFO - Pré-processador montado. Aplicando ao dataset...
+2025-04-19 23:25:22,623 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-19 23:25:22,632 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 23:25:22,633 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 23:27:31,976 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:27:31,984 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:27:31,985 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:27:31,986 - INFO - Python backend loaded
+2025-04-19 23:27:35,194 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:27:35,195 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:27:35,570 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:27:35,570 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:27:35,716 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:27:36,037 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-19 23:27:36,671 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-19 23:27:36,778 - INFO - Coluna 'size' convertida para numérico.
+2025-04-19 23:27:36,939 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-19 23:27:37,104 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-19 23:27:37,150 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-19 23:27:37,150 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-19 23:27:37,150 - INFO - Pré-processador montado. Aplicando ao dataset...
+2025-04-19 23:27:38,215 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-19 23:27:38,229 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 23:27:38,230 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-19 23:50:26,286 - INFO - Modelo de regressão treinado com sucesso.
+2025-04-19 23:50:26,286 - INFO - Gerando gráfico do modelo...
+2025-04-19 23:50:30,074 - INFO - Gráfico do modelo salvo em views/regression_model_plot.png
+2025-04-19 23:50:30,074 - ERROR - Erro ao salvar métricas: 'Label'
+2025-04-19 23:50:30,074 - INFO - Gerando gráfico SHAP...
+2025-04-19 23:58:32,802 - INFO - Pandas backend loaded 2.2.3
+2025-04-19 23:58:32,810 - INFO - Numpy backend loaded 1.26.4
+2025-04-19 23:58:32,811 - INFO - Pyspark backend NOT loaded
+2025-04-19 23:58:32,811 - INFO - Python backend loaded
+2025-04-19 23:58:36,191 - INFO - Iniciando modo treinamento: arquivo=Watches.csv, target=price, tipo=regression
+2025-04-19 23:58:36,191 - INFO - Lendo dados para treinamento: models/dataset\Watches.csv
+2025-04-19 23:58:36,598 - INFO - Iniciando pré-processamento dos dados.
+2025-04-19 23:58:36,598 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-19 23:58:36,743 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-19 23:58:37,071 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-19 23:58:37,703 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-19 23:58:37,808 - INFO - Coluna 'size' convertida para numérico.
+2025-04-19 23:58:37,966 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-19 23:58:38,131 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-19 23:58:38,131 - INFO - Shape após limpeza inicial: (269826, 13)
+2025-04-19 23:58:38,177 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-19 23:58:38,178 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-19 23:58:38,178 - INFO - Nº de amostras: 269826
+2025-04-19 23:58:38,178 - INFO - Aplicando pré-processador...
+2025-04-19 23:58:39,223 - INFO - Coluna yop - valores únicos: 169
+2025-04-19 23:58:39,225 - INFO - Coluna size - valores únicos: 480
+2025-04-19 23:58:39,228 - INFO - Coluna watch_age - valores únicos: 169
+2025-04-19 23:58:39,230 - INFO - Coluna has_gold - valores únicos: 2
+2025-04-19 23:58:39,232 - INFO - Coluna brand - valores únicos: 21
+2025-04-19 23:58:39,234 - INFO - Coluna model - valores únicos: 31
+2025-04-19 23:58:39,236 - INFO - Coluna mvmt - valores únicos: 3
+2025-04-19 23:58:39,239 - INFO - Coluna casem - valores únicos: 17
+2025-04-19 23:58:39,240 - INFO - Coluna bracem - valores únicos: 22
+2025-04-19 23:58:39,242 - INFO - Coluna cond - valores únicos: 7
+2025-04-19 23:58:39,243 - INFO - Coluna sex - valores únicos: 2
+2025-04-19 23:58:39,245 - INFO - Coluna condition - valores únicos: 7
+2025-04-19 23:58:39,246 - INFO - Shape final de X: (269826, 12)
+2025-04-19 23:58:39,246 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-19 23:58:39,262 - INFO - Iniciando treinamento com PyCaret.
+2025-04-19 23:58:39,262 - INFO - Iniciando setup do PyCaret para tarefa: regression
+2025-04-20 00:20:46,036 - INFO - Modelo de regressão treinado com sucesso.
+2025-04-20 00:20:46,036 - INFO - Gerando gráfico do modelo...
+2025-04-20 00:20:51,905 - INFO - Gráfico do modelo salvo automaticamente como residuals.png
+2025-04-20 00:20:51,906 - ERROR - Erro ao salvar métricas: 'Label'
+2025-04-20 00:20:51,906 - INFO - Gerando gráfico SHAP...
+2025-04-20 00:24:34,356 - INFO - Pandas backend loaded 2.2.3
+2025-04-20 00:24:34,365 - INFO - Numpy backend loaded 1.26.4
+2025-04-20 00:24:34,366 - INFO - Pyspark backend NOT loaded
+2025-04-20 00:24:34,366 - INFO - Python backend loaded
+2025-04-20 00:24:38,373 - INFO - Executando pipeline completa (download, EDA, treino TPOT e análise SHAP)...
+2025-04-20 00:24:38,373 - INFO - Iniciando autenticação no Kaggle.
+2025-04-20 00:24:38,374 - INFO - Autenticação bem-sucedida!
+2025-04-20 00:24:38,374 - INFO - Autenticação bem-sucedida! Fazendo download do dataset.
+2025-04-20 00:24:42,111 - INFO - Dataset philmorekoung11/luxury-watch-listings baixado com sucesso em models/dataset
+2025-04-20 00:24:42,111 - INFO - Dataset baixado com sucesso! Gerando relatórios de EDA.
+2025-04-20 00:24:43,075 - INFO - Dataset carregado com sucesso: models/dataset\Watches.csv
+2025-04-20 00:27:09,923 - INFO - Relatório ydata-profiling gerado com sucesso.
+2025-04-20 00:27:09,943 - INFO - Relatórios de EDA gerados com sucesso.
+2025-04-20 00:27:09,950 - INFO - Executando treinamento com TPOT...
+2025-04-20 00:27:09,950 - INFO - Carregando os dados do arquivo: models/dataset\Watches.csv
+2025-04-20 00:27:10,381 - INFO - Dados carregados e amostrados com sucesso: 28449 linhas.
+2025-04-20 00:27:10,382 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-20 00:27:10,382 - INFO - Iniciando o pré-processamento dos dados.
+2025-04-20 00:27:10,401 - INFO - Linhas com valores ausentes ou -1 removidas da coluna alvo.
+2025-04-20 00:27:10,424 - INFO - Coluna 'yop' limpa e feature 'watch_age' criada.
+2025-04-20 00:27:10,488 - INFO - Feature binária 'has_gold' criada com base em materiais.
+2025-04-20 00:27:10,499 - INFO - Coluna 'size' convertida para numérico.
+2025-04-20 00:27:10,517 - INFO - Cardinalidade da coluna 'model' reduzida (top 30).
+2025-04-20 00:27:10,533 - INFO - Transformação log1p aplicada ao alvo.
+2025-04-20 00:27:10,534 - INFO - Shape após limpeza inicial: (26996, 13)
+2025-04-20 00:27:10,539 - INFO - Numéricas: ['yop', 'size', 'watch_age', 'has_gold']
+2025-04-20 00:27:10,539 - INFO - Categóricas: ['brand', 'model', 'mvmt', 'casem', 'bracem', 'cond', 'sex', 'condition']
+2025-04-20 00:27:10,539 - INFO - Nº de amostras: 26996
+2025-04-20 00:27:10,540 - INFO - Aplicando pré-processador...
+2025-04-20 00:27:10,670 - INFO - Coluna yop - valores únicos: 126
+2025-04-20 00:27:10,671 - INFO - Coluna size - valores únicos: 234
+2025-04-20 00:27:10,671 - INFO - Coluna watch_age - valores únicos: 126
+2025-04-20 00:27:10,672 - INFO - Coluna has_gold - valores únicos: 2
+2025-04-20 00:27:10,673 - INFO - Coluna brand - valores únicos: 21
+2025-04-20 00:27:10,673 - INFO - Coluna model - valores únicos: 31
+2025-04-20 00:27:10,673 - INFO - Coluna mvmt - valores únicos: 3
+2025-04-20 00:27:10,674 - INFO - Coluna casem - valores únicos: 14
+2025-04-20 00:27:10,674 - INFO - Coluna bracem - valores únicos: 15
+2025-04-20 00:27:10,674 - INFO - Coluna cond - valores únicos: 7
+2025-04-20 00:27:10,675 - INFO - Coluna sex - valores únicos: 2
+2025-04-20 00:27:10,675 - INFO - Coluna condition - valores únicos: 6
+2025-04-20 00:27:10,675 - INFO - Shape final de X: (26996, 12)
+2025-04-20 00:27:10,675 - INFO - Pré-processamento finalizado com sucesso.
+2025-04-20 00:27:10,677 - INFO - Pré-processamento concluído com sucesso.
+2025-04-20 00:27:10,677 - INFO - Número de amostras: 26996
+2025-04-20 00:27:10,680 - INFO - Treino: 24296, Teste: 2700
+2025-04-20 00:27:10,681 - INFO - Tamanho do treino: 24296 | Tamanho do teste: 2700
+2025-04-20 00:27:10,681 - INFO - Valores únicos em y_test: [ 9.17771387  6.61740298  9.15809926 ... 10.8191781   8.15162165
+  8.5769704 ]
+2025-04-20 00:27:10,681 - INFO - Treinando TPOT Regressor (modo rápido).
+2025-04-20 00:27:10,771 - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+2025-04-20 00:27:10,796 - INFO - State start
+2025-04-20 00:27:10,812 - INFO -   Scheduler at:     tcp://127.0.0.1:52648
+2025-04-20 00:27:10,812 - INFO -   dashboard at:  http://127.0.0.1:8787/status
+2025-04-20 00:27:10,813 - INFO - Registering Worker plugin shuffle
+2025-04-20 00:27:10,831 - INFO -         Start Nanny at: 'tcp://127.0.0.1:52651'
+2025-04-20 00:27:15,711 - INFO - Pandas backend loaded 2.2.3
+2025-04-20 00:27:15,721 - INFO - Numpy backend loaded 1.26.4
+2025-04-20 00:27:15,721 - INFO - Pyspark backend NOT loaded
+2025-04-20 00:27:15,721 - INFO - Python backend loaded
+2025-04-20 00:27:19,040 - INFO -       Start worker at:      tcp://127.0.0.1:52672
+2025-04-20 00:27:19,040 - INFO -          Listening to:      tcp://127.0.0.1:52672
+2025-04-20 00:27:19,040 - INFO -           Worker name:                          0
+2025-04-20 00:27:19,040 - INFO -          dashboard at:            127.0.0.1:52673
+2025-04-20 00:27:19,040 - INFO - Waiting to connect to:      tcp://127.0.0.1:52648
+2025-04-20 00:27:19,040 - INFO - -------------------------------------------------
+2025-04-20 00:27:19,041 - INFO -               Threads:                          1
+2025-04-20 00:27:19,041 - INFO -       Local Directory: C:\Users\MATHEU~1\AppData\Local\Temp\dask-scratch-space\worker-xegbwlkz
+2025-04-20 00:27:19,041 - INFO - -------------------------------------------------
+2025-04-20 00:27:19,044 - INFO - Register worker addr: tcp://127.0.0.1:52672 name: 0
+2025-04-20 00:27:19,045 - INFO - Starting worker compute stream, tcp://127.0.0.1:52672
+2025-04-20 00:27:19,045 - INFO - Starting established connection to tcp://127.0.0.1:52674
+2025-04-20 00:27:19,045 - INFO - Starting Worker plugin shuffle
+2025-04-20 00:27:19,046 - INFO -         Registered to:      tcp://127.0.0.1:52648
+2025-04-20 00:27:19,046 - INFO - -------------------------------------------------
+2025-04-20 00:27:19,047 - INFO - Starting established connection to tcp://127.0.0.1:52648
+2025-04-20 00:27:19,083 - INFO - Receive client connection: Client-5d48d6d6-1d97-11f0-8114-0ccc47e8fcbd
+2025-04-20 00:27:19,083 - INFO - Starting established connection to tcp://127.0.0.1:52675
+2025-04-20 00:30:50,706 - INFO - Stopping worker at tcp://127.0.0.1:52672. Reason: worker-close
+2025-04-20 00:30:50,708 - INFO - Closing Nanny gracefully at 'tcp://127.0.0.1:52651'. Reason: worker-close
+2025-04-20 00:30:50,709 - WARNING - Async instruction for <Task cancelled name="execute('eval_objective_list-98cf651064b5339039f5558943c63aab')" coro=<Worker.execute() done, defined at C:\Users\MatheusBenatti\AppData\Local\Programs\Python\Python311\Lib\site-packages\distributed\worker_state_machine.py:3607>> ended with CancelledError
+2025-04-20 00:30:50,709 - INFO - Removing Worker plugin shuffle
+2025-04-20 00:30:50,711 - INFO - Received 'close-stream' from tcp://127.0.0.1:52674; closing.
+2025-04-20 00:30:50,711 - INFO - Connection to tcp://127.0.0.1:52648 has been closed.
+2025-04-20 00:30:50,711 - INFO - Remove worker addr: tcp://127.0.0.1:52672 name: 0 (stimulus_id='handle-worker-cleanup-1745119850.711987')
+2025-04-20 00:30:50,711 - ERROR - Removing worker 'tcp://127.0.0.1:52672' caused the cluster to lose scattered data, which can't be recovered: {'DataFrame-6d9d2060618881fdd47c27cbd4c390f7', 'Series-3e4053cf981fb86886798075d097c189'} (stimulus_id='handle-worker-cleanup-1745119850.711987')
+2025-04-20 00:30:50,712 - INFO - Lost all workers
+2025-04-20 00:30:50,730 - ERROR - Erro durante o treinamento do TPOT: "None of [Index(['Eval Error'], dtype='object')] are in the [index]"
+2025-04-20 00:30:50,764 - INFO - Retire worker addresses (stimulus_id='retire-workers-1745119850.7650874') (0,)
+2025-04-20 00:30:50,765 - INFO - Closing Nanny at 'tcp://127.0.0.1:52651'. Reason: nanny-close
+2025-04-20 00:30:50,765 - INFO - Nanny asking worker to close. Reason: nanny-close
+2025-04-20 00:30:54,777 - WARNING - Worker process still alive after 4.0 seconds, killing
+2025-04-20 00:30:54,830 - INFO - Worker process 50324 was killed by signal 15
+2025-04-20 00:30:54,832 - INFO - Nanny at 'tcp://127.0.0.1:52651' closed.
+2025-04-20 00:30:54,832 - INFO - Closing scheduler. Reason: unknown
+2025-04-20 00:30:54,833 - INFO - Scheduler closing all comms
